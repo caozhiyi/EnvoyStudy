@@ -1,0 +1,2616 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{3f946c31-81b8-41a4-afed-9644b532bbca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\access_log">
+      <UniqueIdentifier>{5956f3c9-5d7d-45fa-a5b6-a566e397f1cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\api">
+      <UniqueIdentifier>{678e66df-0733-4e32-9de3-66b4e0d6e4a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\buffer">
+      <UniqueIdentifier>{ffa7a59e-e2ae-435f-a768-2132ade983aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\common">
+      <UniqueIdentifier>{f4043b28-1efa-4669-8713-378fd0899279}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\compressor">
+      <UniqueIdentifier>{aa51787c-640f-4c46-8add-cea330eaaa3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\config">
+      <UniqueIdentifier>{20dd518d-f380-4b2b-8511-c1abb36401fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\decompressor">
+      <UniqueIdentifier>{72a98916-2ad1-4d3c-950c-41e448013844}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\event">
+      <UniqueIdentifier>{1c1a39b2-86f6-4fe3-bc79-cd0326411003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\filesystem">
+      <UniqueIdentifier>{0aca5565-36ec-47ca-8b8d-03b69f4b6a18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\grpc">
+      <UniqueIdentifier>{4ba6a112-02e3-4c41-ae98-66d205118c4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\http">
+      <UniqueIdentifier>{f820ad8c-d403-4915-a191-9c3c34515d19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\init">
+      <UniqueIdentifier>{83715b85-60e9-4a6d-8029-6119ef129b85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\json">
+      <UniqueIdentifier>{45d7bea3-085a-4144-be6a-5b34f9a7726b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\local_info">
+      <UniqueIdentifier>{4b468d44-dbd3-48ce-bb35-676b2ccb15c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\network">
+      <UniqueIdentifier>{e9b86fdd-3731-4a3a-8576-566aecdb1d0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ratelimit">
+      <UniqueIdentifier>{6aaff980-19b1-44a9-b336-48523906438b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\registry">
+      <UniqueIdentifier>{b55a0fd3-83d6-4816-bae6-8e64c023425a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\request_info">
+      <UniqueIdentifier>{5f058e83-b904-4181-a4f3-b67b2e6e8279}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\router">
+      <UniqueIdentifier>{3ff2756d-dc95-4215-b258-360d7f179913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\runtime">
+      <UniqueIdentifier>{0eeebfc2-a052-4e31-8da2-43037566fa7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\secret">
+      <UniqueIdentifier>{384bbd81-35dd-40ee-af0c-616072ea856f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\server">
+      <UniqueIdentifier>{22334933-8daf-493d-bcc9-a0db7c6339d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\singleton">
+      <UniqueIdentifier>{57a9c46c-d1b6-4888-acaf-f6366e3d1fc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ssl">
+      <UniqueIdentifier>{3494cce6-b121-4995-9897-19c2781d1c3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\stats">
+      <UniqueIdentifier>{ef40baa0-a5a6-4ae5-beea-24eb167f8f1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\tcp">
+      <UniqueIdentifier>{37861e16-cf6f-43cf-a76c-91087281ba6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\thread">
+      <UniqueIdentifier>{776a375c-6787-4535-beed-5eac7bca0282}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\thread_local">
+      <UniqueIdentifier>{fbaf6a09-3503-41c5-abaa-390badc02b31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\tracing">
+      <UniqueIdentifier>{e1fad43a-90fb-438c-bfdd-994ac51ef673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\upstream">
+      <UniqueIdentifier>{37633f87-f124-4823-87f7-ecc2e3c2d22a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{27c350aa-0241-428f-80aa-8b24ddc814bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common">
+      <UniqueIdentifier>{ab6d810f-830c-4431-9efa-199ba82e2604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\access_log">
+      <UniqueIdentifier>{6d72811e-0105-40ea-8a96-35996d750e87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\api">
+      <UniqueIdentifier>{dfe0a36f-c614-48b8-b77a-f4985597935c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\buffer">
+      <UniqueIdentifier>{0e80bf22-ca3b-47b1-8edf-e6fd25ff29b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\common">
+      <UniqueIdentifier>{6b1ad0ea-645b-4337-8efa-ac1ace75f838}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\compressor">
+      <UniqueIdentifier>{de4efc8c-5c71-4df4-8416-bf7139168391}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\config">
+      <UniqueIdentifier>{01e219b1-b446-4a12-8e05-73002e51fc21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\decompressor">
+      <UniqueIdentifier>{e3468ad6-d4e1-4c3c-82d1-7e018f542488}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\event">
+      <UniqueIdentifier>{bfeeab18-a1b6-4faf-8193-72916be3415f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\filesystem">
+      <UniqueIdentifier>{e9c48f0b-01a7-4747-8fad-54070a7e8553}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\grpc">
+      <UniqueIdentifier>{dcd5a50f-3124-4e59-8f5e-08338be42f70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\html">
+      <UniqueIdentifier>{a61ede56-9255-4fd9-b7e1-a41b079bcc7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\http">
+      <UniqueIdentifier>{8343d729-de18-4ae2-85ef-2f4bb17d6d1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\json">
+      <UniqueIdentifier>{19912355-336b-4513-874c-f02c15533c1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\local_info">
+      <UniqueIdentifier>{64ca68cb-645f-4f7f-9271-906d93f98bb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\memory">
+      <UniqueIdentifier>{9a46a5ce-dafc-4f3a-a495-5165eb4e3b71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\network">
+      <UniqueIdentifier>{41bb5f33-1137-453a-8d5f-e9da9a47e2b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\profiler">
+      <UniqueIdentifier>{719da011-1fa8-47ce-954f-37e9d47a86db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\protobuf">
+      <UniqueIdentifier>{f06c7e6d-abd4-4d14-90a2-2ff5426fb208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\ratelimit">
+      <UniqueIdentifier>{fadbac79-1ce6-49c6-b5cf-ac37e8e32f5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\request_info">
+      <UniqueIdentifier>{2b3d474c-6196-4ae2-82b4-f98d07aacd8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\router">
+      <UniqueIdentifier>{93738ab4-f7f0-4b4e-b1aa-69c043cbef5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\runtime">
+      <UniqueIdentifier>{9cbb5eff-1564-4704-871f-704efe371690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\secret">
+      <UniqueIdentifier>{e3e66e86-ba71-4b40-928f-c28cb2c4a4e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\singleton">
+      <UniqueIdentifier>{ccc62539-ad1d-4eb5-9d7f-d69af89d2798}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\ssl">
+      <UniqueIdentifier>{8e43a85e-b023-4fae-bf31-1b6158f9ba2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\stats">
+      <UniqueIdentifier>{a1393623-9d62-4ca4-802f-04e08001a665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\tcp">
+      <UniqueIdentifier>{9a83e28b-a71b-40b1-ab84-63137bbb9328}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\tcp_proxy">
+      <UniqueIdentifier>{35ba9c3e-b812-4248-92ba-dbaab4c18fda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\thread_local">
+      <UniqueIdentifier>{e316ae56-649e-49f6-8d82-f687fbec18d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\tracing">
+      <UniqueIdentifier>{6185d80c-2bdf-49f1-a550-05e0e23dd628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\upstream">
+      <UniqueIdentifier>{f0f99ed0-5a21-4c37-930c-7723dc24bf16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\filesystem\inotify">
+      <UniqueIdentifier>{11df0efe-5cc8-4afd-95b2-ac0790d25db6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\filesystem\kqueue">
+      <UniqueIdentifier>{4028e96d-afbb-4217-9fd8-d0623ac19c1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\http\http1">
+      <UniqueIdentifier>{5e2853f9-e0f2-410f-950e-4d821d8c20ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\http\http2">
+      <UniqueIdentifier>{1b85ee42-4c31-4f20-9b68-0a9aa3bf0702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\common\http\websocket">
+      <UniqueIdentifier>{d2b52d8c-790e-4f74-8cff-48d69cb4d133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\exe">
+      <UniqueIdentifier>{fd8a9cb4-1533-4e63-9d1b-0109f1d6a9d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions">
+      <UniqueIdentifier>{76a522cd-609e-404b-81b4-8ddb55aedd06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\access_logers">
+      <UniqueIdentifier>{cd0219db-ad08-4eba-86e7-a7dfb2816199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters">
+      <UniqueIdentifier>{0fb019c6-e836-4c32-a087-fcbc9cd70f12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\grpc_credentials">
+      <UniqueIdentifier>{be0e73a2-8cec-4425-b0db-62325ca6ea9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\health_checkers">
+      <UniqueIdentifier>{942795d3-71e9-435c-8b7f-e63c279bf46e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\stat_sinks">
+      <UniqueIdentifier>{c5cd5e9e-0a84-44bb-9d77-0a4bc6ec6e70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\tracers">
+      <UniqueIdentifier>{645d8489-4570-4205-920d-96124d4436aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\transport_sockets">
+      <UniqueIdentifier>{62cac8c8-7af6-459e-89e7-7baafc700241}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\access_logers\file">
+      <UniqueIdentifier>{b839a7c2-861b-434a-be63-b3a47e006765}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\access_logers\http_grpc">
+      <UniqueIdentifier>{b93a77c1-d9e6-4614-adf5-9ec8f143735c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\common">
+      <UniqueIdentifier>{cfa33d81-f6bf-45d8-9023-7438944e4343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\http">
+      <UniqueIdentifier>{6533139f-7385-4a19-af8d-20e5d1e9114b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\listener">
+      <UniqueIdentifier>{5508dd35-1c23-4b03-97fc-b87522bc40e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\network">
+      <UniqueIdentifier>{ec5ad48a-8f16-45cf-9a8c-3d0d8fb11103}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\common\ext_authz">
+      <UniqueIdentifier>{15a7e423-16ce-4bbd-9be6-ab354a95da59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\common\lua">
+      <UniqueIdentifier>{5d047562-9224-4e8f-9e23-b2dd0b1ca81e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\common\rbac">
+      <UniqueIdentifier>{621e3a17-c106-4a28-9743-6c5bca8b0928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\http\buffer">
+      <UniqueIdentifier>{f8dff53c-f36f-41d3-81a8-e83dd2a15b6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\http\common">
+      <UniqueIdentifier>{92be9d66-a5f4-41f6-8128-d234483cc535}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\http\cors">
+      <UniqueIdentifier>{cfbbbe51-6cfa-45fe-a3e6-f85ce958739c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\http\dynamo">
+      <UniqueIdentifier>{4418671b-6c0d-43e4-bb77-ad513b978148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\http\ext_authz">
+      <UniqueIdentifier>{a71aa1b1-e903-4877-9586-9d3ded7fc77f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\http\fault">
+      <UniqueIdentifier>{bcc34732-401e-42f4-bd15-5b3e4f8a8541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\http\grpc_http1_bridge">
+      <UniqueIdentifier>{4defcb36-9d84-4448-a2a3-2e712736ed8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\http\grpc_json_transcoder">
+      <UniqueIdentifier>{cf102d0d-8e01-4519-afe3-d2e8eb9670b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\http\grpc_web">
+      <UniqueIdentifier>{fcf0e07b-fa64-4ff5-a50a-99f0a482aa0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\http\gzip">
+      <UniqueIdentifier>{3c65eeef-5e95-4f37-aaa8-27fdcb440df6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\http\header_to_metadata">
+      <UniqueIdentifier>{cdb93340-85d0-4005-9869-89a3b1490798}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\http\health_check">
+      <UniqueIdentifier>{f42b0496-d225-4bf1-bd04-d66aa488c2b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\http\ip_tagging">
+      <UniqueIdentifier>{21f3d594-a775-43d0-b8b1-b1bafb4a34ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\http\jwt_authn">
+      <UniqueIdentifier>{36362c2f-b800-420f-b2a6-91c31b7ee920}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\http\lua">
+      <UniqueIdentifier>{a67d14da-8f2d-4b1d-87ba-b0e08fd3433f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\http\ratelimit">
+      <UniqueIdentifier>{015224d8-f186-44a0-a01f-1072bb3c6218}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\http\rbac">
+      <UniqueIdentifier>{2cd83558-9346-4d0e-82af-4ac71108080f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\http\router">
+      <UniqueIdentifier>{49b68a78-0ee4-409e-9c89-6b024a8ae49e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\http\squash">
+      <UniqueIdentifier>{792f701a-a334-4a9e-b608-75f12dfeb7dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\listener\original_dst">
+      <UniqueIdentifier>{62986034-366d-4b7d-ac5b-3dde9c1000d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\listener\proxy_protocol">
+      <UniqueIdentifier>{9e2e75cd-d711-44e2-b4eb-0959f7f9593a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\listener\tls_inspector">
+      <UniqueIdentifier>{b010437a-a19a-409a-87e1-61d9aec9625d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\network\client_ssl_auth">
+      <UniqueIdentifier>{6d85dbc5-39f8-4b77-a37c-6d8eacbcbf5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\network\common">
+      <UniqueIdentifier>{5066db89-6956-46fd-a0ca-2774a4ef1fde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\network\echo">
+      <UniqueIdentifier>{c04b37a4-a73e-45fb-a1d3-b221265c11e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\network\ext_authz">
+      <UniqueIdentifier>{61694dac-77e6-4c16-b58b-a9869a5014f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\network\http_connectinon_manager">
+      <UniqueIdentifier>{15b49a9c-5cc3-41d4-b88e-e30aadcddb76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\network\mongo_proxy">
+      <UniqueIdentifier>{e58f1167-859e-4178-ab8c-a18bf791e050}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\network\ratelimit">
+      <UniqueIdentifier>{bde7bc8a-2363-4a4c-8a06-09ac691e79f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\network\redis_proxy">
+      <UniqueIdentifier>{1fcd9e49-e264-4757-9737-322fdde325e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\network\thrift_proxy">
+      <UniqueIdentifier>{33fe02ae-f1ba-4f0f-8a61-2b266929b9f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\filters\network\tcp_proxy">
+      <UniqueIdentifier>{8ef28f7f-4d4b-4e11-96ec-738f285addf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\grpc_credentials\example">
+      <UniqueIdentifier>{04532530-5759-44dc-bb54-20dab124debf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\grpc_credentials\file_based_metadata">
+      <UniqueIdentifier>{d9a781e5-7296-4442-904a-2752cee33344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\health_checkers\redis">
+      <UniqueIdentifier>{2ba666b6-d930-41df-a946-8cab4f18cb3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\transport_sockets\alts">
+      <UniqueIdentifier>{7911c1e4-be83-4e1e-9be0-3ed3f76e9321}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\transport_sockets\capture">
+      <UniqueIdentifier>{672b1294-f88a-4f72-baeb-400264ff3726}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\transport_sockets\raw_buffer">
+      <UniqueIdentifier>{ada50ac2-8ee9-4e7f-b55c-d65eec2221b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\transport_sockets\ssl">
+      <UniqueIdentifier>{55a95125-16e4-42ed-8109-31d01023ff61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\tracers\common">
+      <UniqueIdentifier>{1187c361-2804-4182-b4a5-ad0d92f4c3c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\tracers\dynamic_ot">
+      <UniqueIdentifier>{b6a5c59c-7a44-454b-b857-3263d875af11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\tracers\lightstep">
+      <UniqueIdentifier>{f1e04069-3fc4-429a-a4a4-cf4aebdccc0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\tracers\zipkin">
+      <UniqueIdentifier>{6d65c8f7-6c4c-4238-8429-34c54b885aa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\stat_sinks\common">
+      <UniqueIdentifier>{b31642b4-447c-44d9-b0dd-58ea86ec2d82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\stat_sinks\dog_statsd">
+      <UniqueIdentifier>{052305fe-3924-4d40-b429-30d20859915c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\stat_sinks\hystrix">
+      <UniqueIdentifier>{36011e09-af0c-42a4-8521-83cf06508c45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\stat_sinks\metrics_service">
+      <UniqueIdentifier>{35d0bda8-1417-4438-9e8f-748da51f9987}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\extensions\stat_sinks\statsd">
+      <UniqueIdentifier>{a562bdab-5504-4b5b-acd3-7fd4f0f28702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\server">
+      <UniqueIdentifier>{fe57476e-5bf4-4dbc-95dd-6ed88ee3453f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\server\config_validation">
+      <UniqueIdentifier>{243f4c10-0b06-45b8-891e-6ded5fea04bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\server\http">
+      <UniqueIdentifier>{2f8de82c-1036-4565-8bb2-e98ab6d45be3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\envoy\access_log\access_log.h">
+      <Filter>include\access_log</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\api\api.h">
+      <Filter>include\api</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\api\os_sys_calls.h">
+      <Filter>include\api</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\buffer\buffer.h">
+      <Filter>include\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\common\backoff_strategy.h">
+      <Filter>include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\common\callback.h">
+      <Filter>include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\common\exception.h">
+      <Filter>include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\common\interval_set.h">
+      <Filter>include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\common\pure.h">
+      <Filter>include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\common\time.h">
+      <Filter>include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\common\token_bucket.h">
+      <Filter>include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\compressor\compressor.h">
+      <Filter>include\compressor</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\config\grpc_mux.h">
+      <Filter>include\config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\config\subscription.h">
+      <Filter>include\config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\decompressor\decompressor.h">
+      <Filter>include\decompressor</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\event\deferred_deletable.h">
+      <Filter>include\event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\event\dispatcher.h">
+      <Filter>include\event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\event\file_event.h">
+      <Filter>include\event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\event\signal.h">
+      <Filter>include\event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\event\timer.h">
+      <Filter>include\event</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\filesystem\filesystem.h">
+      <Filter>include\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\grpc\async_client.h">
+      <Filter>include\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\grpc\async_client_manager.h">
+      <Filter>include\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\grpc\google_grpc_creds.h">
+      <Filter>include\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\grpc\status.h">
+      <Filter>include\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\http\async_client.h">
+      <Filter>include\http</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\http\codec.h">
+      <Filter>include\http</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\http\codes.h">
+      <Filter>include\http</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\http\conn_pool.h">
+      <Filter>include\http</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\http\filter.h">
+      <Filter>include\http</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\http\header_map.h">
+      <Filter>include\http</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\http\message.h">
+      <Filter>include\http</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\http\protocol.h">
+      <Filter>include\http</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\http\query_params.h">
+      <Filter>include\http</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\http\websocket.h">
+      <Filter>include\http</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\init\init.h">
+      <Filter>include\init</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\json\json_object.h">
+      <Filter>include\json</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\local_info\local_info.h">
+      <Filter>include\local_info</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\network\address.h">
+      <Filter>include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\network\connection.h">
+      <Filter>include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\network\connection_handler.h">
+      <Filter>include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\network\dns.h">
+      <Filter>include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\network\drain_decision.h">
+      <Filter>include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\network\filter.h">
+      <Filter>include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\network\listen_socket.h">
+      <Filter>include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\network\listener.h">
+      <Filter>include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\network\resolver.h">
+      <Filter>include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\network\transport_socket.h">
+      <Filter>include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\upstream\cluster_manager.h">
+      <Filter>include\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\upstream\health_check_host_monitor.h">
+      <Filter>include\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\upstream\health_checker.h">
+      <Filter>include\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\upstream\host_description.h">
+      <Filter>include\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\upstream\load_balancer.h">
+      <Filter>include\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\upstream\load_balancer_type.h">
+      <Filter>include\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\upstream\outlier_detection.h">
+      <Filter>include\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\upstream\resource_manager.h">
+      <Filter>include\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\upstream\thread_local_cluster.h">
+      <Filter>include\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\upstream\upstream.h">
+      <Filter>include\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\tracing\http_tracer.h">
+      <Filter>include\tracing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\thread_local\thread_local.h">
+      <Filter>include\thread_local</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\thread\thread.h">
+      <Filter>include\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\tcp\conn_pool.h">
+      <Filter>include\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\stats\stats.h">
+      <Filter>include\stats</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\stats\stats_macros.h">
+      <Filter>include\stats</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\stats\timespan.h">
+      <Filter>include\stats</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\ssl\connection.h">
+      <Filter>include\ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\ssl\context.h">
+      <Filter>include\ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\ssl\context_config.h">
+      <Filter>include\ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\ssl\context_manager.h">
+      <Filter>include\ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\ssl\tls_certificate_config.h">
+      <Filter>include\ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\singleton\instance.h">
+      <Filter>include\singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\singleton\manager.h">
+      <Filter>include\singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\server\access_log_config.h">
+      <Filter>include\server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\server\admin.h">
+      <Filter>include\server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\server\config_tracker.h">
+      <Filter>include\server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\server\configuration.h">
+      <Filter>include\server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\server\drain_manager.h">
+      <Filter>include\server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\server\filter_config.h">
+      <Filter>include\server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\server\guarddog.h">
+      <Filter>include\server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\server\health_checker_config.h">
+      <Filter>include\server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\server\hot_restart.h">
+      <Filter>include\server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\server\instance.h">
+      <Filter>include\server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\server\listener_manager.h">
+      <Filter>include\server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\server\options.h">
+      <Filter>include\server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\server\transport_socket_config.h">
+      <Filter>include\server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\server\watchdog.h">
+      <Filter>include\server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\server\worker.h">
+      <Filter>include\server</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\secret\secret_manager.h">
+      <Filter>include\secret</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\runtime\runtime.h">
+      <Filter>include\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\router\rds.h">
+      <Filter>include\router</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\router\route_config_provider_manager.h">
+      <Filter>include\router</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\router\router.h">
+      <Filter>include\router</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\router\router_ratelimit.h">
+      <Filter>include\router</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\router\shadow_writer.h">
+      <Filter>include\router</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\request_info\request_info.h">
+      <Filter>include\request_info</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\registry\registry.h">
+      <Filter>include\registry</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envoy\ratelimit\ratelimit.h">
+      <Filter>include\ratelimit</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\access_log\access_log_formatter.h">
+      <Filter>source\common\access_log</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\access_log\access_log_impl.h">
+      <Filter>source\common\access_log</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\access_log\access_log_manager_impl.h">
+      <Filter>source\common\access_log</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\api\api_impl.h">
+      <Filter>source\common\api</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\api\os_sys_calls_impl.h">
+      <Filter>source\common\api</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\buffer\buffer_impl.h">
+      <Filter>source\common\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\buffer\watermark_buffer.h">
+      <Filter>source\common\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\buffer\zero_copy_input_stream_impl.h">
+      <Filter>source\common\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\assert.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\backoff_strategy.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\base64.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\block_memory_hash_set.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\byte_order.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\c_smart_ptr.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\callback_impl.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\cleanup.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\compiler_requirements.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\empty_string.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\enum_to_int.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\fmt.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\hash.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\hex.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\linked_object.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\lock_guard.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\logger.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\logger_delegates.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\macros.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\matchers.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\non_copyable.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\perf_annotation.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\stl_helpers.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\thread.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\thread_annotations.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\to_lower_table.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\token_bucket_impl.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\utility.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\common\version.h">
+      <Filter>source\common\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\compressor\zlib_compressor_impl.h">
+      <Filter>source\common\compressor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\address_json.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\base_json.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\bootstrap_json.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\cds_json.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\datasource.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\filesystem_subscription_impl.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\filter_json.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\grpc_mux_impl.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\grpc_mux_subscription_impl.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\grpc_subscription_impl.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\http_subscription_impl.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\json_utility.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\lds_json.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\metadata.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\protobuf_link_hacks.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\protocol_json.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\rds_json.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\resources.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\subscription_factory.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\tls_context_json.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\utility.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\config\well_known_names.h">
+      <Filter>source\common\config</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\decompressor\zlib_decompressor_impl.h">
+      <Filter>source\common\decompressor</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\event\dispatched_thread.h">
+      <Filter>source\common\event</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\event\dispatcher_impl.h">
+      <Filter>source\common\event</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\event\event_impl_base.h">
+      <Filter>source\common\event</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\event\file_event_impl.h">
+      <Filter>source\common\event</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\event\libevent.h">
+      <Filter>source\common\event</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\event\signal_impl.h">
+      <Filter>source\common\event</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\event\timer_impl.h">
+      <Filter>source\common\event</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\filesystem\filesystem_impl.h">
+      <Filter>source\common\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\filesystem\inotify\watcher_impl.h">
+      <Filter>source\common\filesystem\inotify</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\filesystem\kqueue\watcher_impl.h">
+      <Filter>source\common\filesystem\kqueue</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\grpc\async_client_impl.h">
+      <Filter>source\common\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\grpc\async_client_manager_impl.h">
+      <Filter>source\common\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\grpc\codec.h">
+      <Filter>source\common\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\grpc\common.h">
+      <Filter>source\common\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\grpc\google_async_client_impl.h">
+      <Filter>source\common\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\grpc\google_grpc_creds_impl.h">
+      <Filter>source\common\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\grpc\status.h">
+      <Filter>source\common\grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\html\utility.h">
+      <Filter>source\common\html</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\async_client_impl.h">
+      <Filter>source\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\codec_client.h">
+      <Filter>source\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\codec_helper.h">
+      <Filter>source\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\codec_wrappers.h">
+      <Filter>source\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\codes.h">
+      <Filter>source\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\conn_manager_config.h">
+      <Filter>source\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\conn_manager_impl.h">
+      <Filter>source\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\conn_manager_utility.h">
+      <Filter>source\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\date_provider.h">
+      <Filter>source\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\date_provider_impl.h">
+      <Filter>source\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\default_server_string.h">
+      <Filter>source\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\exception.h">
+      <Filter>source\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\filter_utility.h">
+      <Filter>source\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\header_map_impl.h">
+      <Filter>source\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\header_utility.h">
+      <Filter>source\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\headers.h">
+      <Filter>source\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\message_impl.h">
+      <Filter>source\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\rest_api_fetcher.h">
+      <Filter>source\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\user_agent.h">
+      <Filter>source\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\utility.h">
+      <Filter>source\common\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\http1\codec_impl.h">
+      <Filter>source\common\http\http1</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\http1\conn_pool.h">
+      <Filter>source\common\http\http1</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\http2\codec_impl.h">
+      <Filter>source\common\http\http2</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\http2\conn_pool.h">
+      <Filter>source\common\http\http2</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\http\websocket\ws_handler_impl.h">
+      <Filter>source\common\http\websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\json\config_schemas.h">
+      <Filter>source\common\json</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\json\json_loader.h">
+      <Filter>source\common\json</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\json\json_validator.h">
+      <Filter>source\common\json</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\local_info\local_info_impl.h">
+      <Filter>source\common\local_info</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\memory\stats.h">
+      <Filter>source\common\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\network\addr_family_aware_socket_option_impl.h">
+      <Filter>source\common\network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\network\address_impl.h">
+      <Filter>source\common\network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\network\cidr_range.h">
+      <Filter>source\common\network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\network\connection_impl.h">
+      <Filter>source\common\network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\network\dns_impl.h">
+      <Filter>source\common\network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\network\filter_impl.h">
+      <Filter>source\common\network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\network\filter_manager_impl.h">
+      <Filter>source\common\network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\network\lc_trie.h">
+      <Filter>source\common\network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\network\listen_socket_impl.h">
+      <Filter>source\common\network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\network\listener_impl.h">
+      <Filter>source\common\network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\network\raw_buffer_socket.h">
+      <Filter>source\common\network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\network\resolver_impl.h">
+      <Filter>source\common\network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\network\socket_option_factory.h">
+      <Filter>source\common\network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\network\socket_option_impl.h">
+      <Filter>source\common\network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\network\utility.h">
+      <Filter>source\common\network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\cds_api_impl.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\cds_subscription.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\cluster_manager_impl.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\edf_scheduler.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\eds.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\health_checker_base_impl.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\health_checker_impl.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\health_discovery_service.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\host_utility.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\load_balancer_impl.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\load_stats_reporter.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\locality.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\logical_dns_cluster.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\maglev_lb.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\original_dst_cluster.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\outlier_detection_impl.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\resource_manager_impl.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\ring_hash_lb.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\sds_subscription.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\subset_lb.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\thread_aware_lb_impl.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\upstream\upstream_impl.h">
+      <Filter>source\common\upstream</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\tracing\http_tracer_impl.h">
+      <Filter>source\common\tracing</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\thread_local\thread_local_impl.h">
+      <Filter>source\common\thread_local</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\tcp_proxy\tcp_proxy.h">
+      <Filter>source\common\tcp_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\tcp\conn_pool.h">
+      <Filter>source\common\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\stats\stats_impl.h">
+      <Filter>source\common\stats</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\stats\thread_local_store.h">
+      <Filter>source\common\stats</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\ssl\context_config_impl.h">
+      <Filter>source\common\ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\ssl\context_impl.h">
+      <Filter>source\common\ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\ssl\context_manager_impl.h">
+      <Filter>source\common\ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\ssl\ssl_socket.h">
+      <Filter>source\common\ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\ssl\tls_certificate_config_impl.h">
+      <Filter>source\common\ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\ssl\utility.h">
+      <Filter>source\common\ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\singleton\const_singleton.h">
+      <Filter>source\common\singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\singleton\manager_impl.h">
+      <Filter>source\common\singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\singleton\threadsafe_singleton.h">
+      <Filter>source\common\singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\secret\secret_manager_impl.h">
+      <Filter>source\common\secret</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\runtime\runtime_impl.h">
+      <Filter>source\common\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\runtime\uuid_util.h">
+      <Filter>source\common\runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\router\config_impl.h">
+      <Filter>source\common\router</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\router\config_utility.h">
+      <Filter>source\common\router</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\router\header_formatter.h">
+      <Filter>source\common\router</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\router\header_parser.h">
+      <Filter>source\common\router</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\router\metadatamatchcriteria_impl.h">
+      <Filter>source\common\router</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\router\rds_impl.h">
+      <Filter>source\common\router</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\router\rds_subscription.h">
+      <Filter>source\common\router</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\router\retry_state_impl.h">
+      <Filter>source\common\router</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\router\router.h">
+      <Filter>source\common\router</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\router\router_ratelimit.h">
+      <Filter>source\common\router</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\router\shadow_writer_impl.h">
+      <Filter>source\common\router</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\request_info\request_info_impl.h">
+      <Filter>source\common\request_info</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\request_info\utility.h">
+      <Filter>source\common\request_info</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\ratelimit\ratelimit_impl.h">
+      <Filter>source\common\ratelimit</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\protobuf\protobuf.h">
+      <Filter>source\common\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\protobuf\utility.h">
+      <Filter>source\common\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="source\common\profiler\profiler.h">
+      <Filter>source\common\profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="source\exe\main_common.h">
+      <Filter>source\exe</Filter>
+    </ClInclude>
+    <ClInclude Include="source\exe\signal_action.h">
+      <Filter>source\exe</Filter>
+    </ClInclude>
+    <ClInclude Include="source\exe\terminate_handler.h">
+      <Filter>source\exe</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\access_loggers\file\config.h">
+      <Filter>source\extensions\access_logers\file</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\access_loggers\file\file_access_log_impl.h">
+      <Filter>source\extensions\access_logers\file</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\access_loggers\http_grpc\config.h">
+      <Filter>source\extensions\access_logers\http_grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\access_loggers\http_grpc\grpc_access_log_impl.h">
+      <Filter>source\extensions\access_logers\http_grpc</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\access_loggers\well_known_names.h">
+      <Filter>source\extensions\access_logers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\common\ext_authz\check_request_utils.h">
+      <Filter>source\extensions\filters\common\ext_authz</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\common\ext_authz\ext_authz.h">
+      <Filter>source\extensions\filters\common\ext_authz</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\common\ext_authz\ext_authz_grpc_impl.h">
+      <Filter>source\extensions\filters\common\ext_authz</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\common\ext_authz\ext_authz_http_impl.h">
+      <Filter>source\extensions\filters\common\ext_authz</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\common\lua\lua.h">
+      <Filter>source\extensions\filters\common\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\common\lua\wrappers.h">
+      <Filter>source\extensions\filters\common\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\common\rbac\engine.h">
+      <Filter>source\extensions\filters\common\rbac</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\common\rbac\engine_impl.h">
+      <Filter>source\extensions\filters\common\rbac</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\common\rbac\matchers.h">
+      <Filter>source\extensions\filters\common\rbac</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\well_known_names.h">
+      <Filter>source\extensions\filters\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\buffer\buffer_filter.h">
+      <Filter>source\extensions\filters\http\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\buffer\config.h">
+      <Filter>source\extensions\filters\http\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\common\empty_http_filter_config.h">
+      <Filter>source\extensions\filters\http\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\common\factory_base.h">
+      <Filter>source\extensions\filters\http\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\cors\config.h">
+      <Filter>source\extensions\filters\http\cors</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\cors\cors_filter.h">
+      <Filter>source\extensions\filters\http\cors</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\dynamo\config.h">
+      <Filter>source\extensions\filters\http\dynamo</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\dynamo\dynamo_filter.h">
+      <Filter>source\extensions\filters\http\dynamo</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\dynamo\dynamo_request_parser.h">
+      <Filter>source\extensions\filters\http\dynamo</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\dynamo\dynamo_utility.h">
+      <Filter>source\extensions\filters\http\dynamo</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\ext_authz\config.h">
+      <Filter>source\extensions\filters\http\ext_authz</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\ext_authz\ext_authz.h">
+      <Filter>source\extensions\filters\http\ext_authz</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\fault\config.h">
+      <Filter>source\extensions\filters\http\fault</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\fault\fault_filter.h">
+      <Filter>source\extensions\filters\http\fault</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\grpc_http1_bridge\config.h">
+      <Filter>source\extensions\filters\http\grpc_http1_bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\grpc_http1_bridge\http1_bridge_filter.h">
+      <Filter>source\extensions\filters\http\grpc_http1_bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\grpc_json_transcoder\config.h">
+      <Filter>source\extensions\filters\http\grpc_json_transcoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\grpc_json_transcoder\json_transcoder_filter.h">
+      <Filter>source\extensions\filters\http\grpc_json_transcoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\grpc_json_transcoder\transcoder_input_stream_impl.h">
+      <Filter>source\extensions\filters\http\grpc_json_transcoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\grpc_web\config.h">
+      <Filter>source\extensions\filters\http\grpc_web</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\grpc_web\grpc_web_filter.h">
+      <Filter>source\extensions\filters\http\grpc_web</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\gzip\config.h">
+      <Filter>source\extensions\filters\http\gzip</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\gzip\gzip_filter.h">
+      <Filter>source\extensions\filters\http\gzip</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\header_to_metadata\config.h">
+      <Filter>source\extensions\filters\http\header_to_metadata</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\header_to_metadata\header_to_metadata_filter.h">
+      <Filter>source\extensions\filters\http\header_to_metadata</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\health_check\config.h">
+      <Filter>source\extensions\filters\http\health_check</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\health_check\health_check.h">
+      <Filter>source\extensions\filters\http\health_check</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\ip_tagging\config.h">
+      <Filter>source\extensions\filters\http\ip_tagging</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\ip_tagging\ip_tagging_filter.h">
+      <Filter>source\extensions\filters\http\ip_tagging</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\jwt_authn\authenticator.h">
+      <Filter>source\extensions\filters\http\jwt_authn</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\jwt_authn\extractor.h">
+      <Filter>source\extensions\filters\http\jwt_authn</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\jwt_authn\filter.h">
+      <Filter>source\extensions\filters\http\jwt_authn</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\jwt_authn\filter_config.h">
+      <Filter>source\extensions\filters\http\jwt_authn</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\jwt_authn\filter_factory.h">
+      <Filter>source\extensions\filters\http\jwt_authn</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\jwt_authn\jwks_cache.h">
+      <Filter>source\extensions\filters\http\jwt_authn</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\lua\config.h">
+      <Filter>source\extensions\filters\http\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\lua\lua_filter.h">
+      <Filter>source\extensions\filters\http\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\lua\wrappers.h">
+      <Filter>source\extensions\filters\http\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\squash\config.h">
+      <Filter>source\extensions\filters\http\squash</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\squash\squash_filter.h">
+      <Filter>source\extensions\filters\http\squash</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\router\config.h">
+      <Filter>source\extensions\filters\http\router</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\rbac\config.h">
+      <Filter>source\extensions\filters\http\rbac</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\rbac\rbac_filter.h">
+      <Filter>source\extensions\filters\http\rbac</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\ratelimit\config.h">
+      <Filter>source\extensions\filters\http\ratelimit</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\http\ratelimit\ratelimit.h">
+      <Filter>source\extensions\filters\http\ratelimit</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\listener\well_known_names.h">
+      <Filter>source\extensions\filters\listener</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\listener\original_dst\original_dst.h">
+      <Filter>source\extensions\filters\listener\tls_inspector</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\listener\proxy_protocol\proxy_protocol.h">
+      <Filter>source\extensions\filters\listener\proxy_protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\listener\proxy_protocol\proxy_protocol_header.h">
+      <Filter>source\extensions\filters\listener\proxy_protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\listener\tls_inspector\tls_inspector.h">
+      <Filter>source\extensions\filters\listener\original_dst</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\well_known_names.h">
+      <Filter>source\extensions\filters\network</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\client_ssl_auth\client_ssl_auth.h">
+      <Filter>source\extensions\filters\network\client_ssl_auth</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\client_ssl_auth\config.h">
+      <Filter>source\extensions\filters\network\client_ssl_auth</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\common\factory_base.h">
+      <Filter>source\extensions\filters\network\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\echo\echo.h">
+      <Filter>source\extensions\filters\network\echo</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\ext_authz\config.h">
+      <Filter>source\extensions\filters\network\ext_authz</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\ext_authz\ext_authz.h">
+      <Filter>source\extensions\filters\network\ext_authz</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\http_connection_manager\config.h">
+      <Filter>source\extensions\filters\network\http_connectinon_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\mongo_proxy\bson.h">
+      <Filter>source\extensions\filters\network\mongo_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\mongo_proxy\bson_impl.h">
+      <Filter>source\extensions\filters\network\mongo_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\mongo_proxy\codec.h">
+      <Filter>source\extensions\filters\network\mongo_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\mongo_proxy\codec_impl.h">
+      <Filter>source\extensions\filters\network\mongo_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\mongo_proxy\config.h">
+      <Filter>source\extensions\filters\network\mongo_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\mongo_proxy\proxy.h">
+      <Filter>source\extensions\filters\network\mongo_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\mongo_proxy\utility.h">
+      <Filter>source\extensions\filters\network\mongo_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\binary_protocol_impl.h">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\buffer_helper.h">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\compact_protocol_impl.h">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\config.h">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\decoder.h">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\filter.h">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\framed_transport_impl.h">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\protocol.h">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\protocol_impl.h">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\transport.h">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\transport_impl.h">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\unframed_transport_impl.h">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\tcp_proxy\config.h">
+      <Filter>source\extensions\filters\network\tcp_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\redis_proxy\codec.h">
+      <Filter>source\extensions\filters\network\redis_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\redis_proxy\codec_impl.h">
+      <Filter>source\extensions\filters\network\redis_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\redis_proxy\command_splitter.h">
+      <Filter>source\extensions\filters\network\redis_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\redis_proxy\command_splitter_impl.h">
+      <Filter>source\extensions\filters\network\redis_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\redis_proxy\config.h">
+      <Filter>source\extensions\filters\network\redis_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\redis_proxy\conn_pool.h">
+      <Filter>source\extensions\filters\network\redis_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\redis_proxy\conn_pool_impl.h">
+      <Filter>source\extensions\filters\network\redis_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\redis_proxy\proxy_filter.h">
+      <Filter>source\extensions\filters\network\redis_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\redis_proxy\supported_commands.h">
+      <Filter>source\extensions\filters\network\redis_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\ratelimit\config.h">
+      <Filter>source\extensions\filters\network\ratelimit</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\filters\network\ratelimit\ratelimit.h">
+      <Filter>source\extensions\filters\network\ratelimit</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\grpc_credentials\well_known_names.h">
+      <Filter>source\extensions\grpc_credentials</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\grpc_credentials\example\config.h">
+      <Filter>source\extensions\grpc_credentials\example</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\grpc_credentials\file_based_metadata\config.h">
+      <Filter>source\extensions\grpc_credentials\file_based_metadata</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\health_checkers\well_known_names.h">
+      <Filter>source\extensions\health_checkers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\health_checkers\redis\config.h">
+      <Filter>source\extensions\health_checkers\redis</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\health_checkers\redis\redis.h">
+      <Filter>source\extensions\health_checkers\redis</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\health_checkers\redis\utility.h">
+      <Filter>source\extensions\health_checkers\redis</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\transport_sockets\well_known_names.h">
+      <Filter>source\extensions\transport_sockets</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\transport_sockets\alts\grpc_tsi.h">
+      <Filter>source\extensions\transport_sockets\alts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\transport_sockets\alts\tsi_handshaker.h">
+      <Filter>source\extensions\transport_sockets\alts</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\transport_sockets\capture\capture.h">
+      <Filter>source\extensions\transport_sockets\capture</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\transport_sockets\capture\config.h">
+      <Filter>source\extensions\transport_sockets\capture</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\transport_sockets\ssl\config.h">
+      <Filter>source\extensions\transport_sockets\ssl</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\transport_sockets\raw_buffer\config.h">
+      <Filter>source\extensions\transport_sockets\raw_buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\tracers\well_known_names.h">
+      <Filter>source\extensions\tracers</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\tracers\common\ot\opentracing_driver_impl.h">
+      <Filter>source\extensions\tracers\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\tracers\dynamic_ot\config.h">
+      <Filter>source\extensions\tracers\dynamic_ot</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\tracers\dynamic_ot\dynamic_opentracing_driver_impl.h">
+      <Filter>source\extensions\tracers\dynamic_ot</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\tracers\lightstep\config.h">
+      <Filter>source\extensions\tracers\lightstep</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\tracers\lightstep\lightstep_tracer_impl.h">
+      <Filter>source\extensions\tracers\lightstep</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\tracers\zipkin\config.h">
+      <Filter>source\extensions\tracers\zipkin</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\tracers\zipkin\span_buffer.h">
+      <Filter>source\extensions\tracers\zipkin</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\tracers\zipkin\span_context.h">
+      <Filter>source\extensions\tracers\zipkin</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\tracers\zipkin\tracer.h">
+      <Filter>source\extensions\tracers\zipkin</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\tracers\zipkin\tracer_interface.h">
+      <Filter>source\extensions\tracers\zipkin</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\tracers\zipkin\util.h">
+      <Filter>source\extensions\tracers\zipkin</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\tracers\zipkin\zipkin_core_constants.h">
+      <Filter>source\extensions\tracers\zipkin</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\tracers\zipkin\zipkin_core_types.h">
+      <Filter>source\extensions\tracers\zipkin</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\tracers\zipkin\zipkin_json_field_names.h">
+      <Filter>source\extensions\tracers\zipkin</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\tracers\zipkin\zipkin_tracer_impl.h">
+      <Filter>source\extensions\tracers\zipkin</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\stat_sinks\well_known_names.h">
+      <Filter>source\extensions\stat_sinks</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\stat_sinks\common\statsd\statsd.h">
+      <Filter>source\extensions\stat_sinks\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\stat_sinks\dog_statsd\config.h">
+      <Filter>source\extensions\stat_sinks\dog_statsd</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\stat_sinks\hystrix\config.h">
+      <Filter>source\extensions\stat_sinks\hystrix</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\stat_sinks\hystrix\hystrix.h">
+      <Filter>source\extensions\stat_sinks\hystrix</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\stat_sinks\metrics_service\config.h">
+      <Filter>source\extensions\stat_sinks\metrics_service</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\stat_sinks\metrics_service\grpc_metrics_service_impl.h">
+      <Filter>source\extensions\stat_sinks\metrics_service</Filter>
+    </ClInclude>
+    <ClInclude Include="source\extensions\stat_sinks\statsd\config.h">
+      <Filter>source\extensions\stat_sinks\statsd</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\config_validation\admin.h">
+      <Filter>source\server\config_validation</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\config_validation\api.h">
+      <Filter>source\server\config_validation</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\config_validation\async_client.h">
+      <Filter>source\server\config_validation</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\config_validation\cluster_manager.h">
+      <Filter>source\server\config_validation</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\config_validation\connection.h">
+      <Filter>source\server\config_validation</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\config_validation\dispatcher.h">
+      <Filter>source\server\config_validation</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\config_validation\dns.h">
+      <Filter>source\server\config_validation</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\config_validation\server.h">
+      <Filter>source\server\config_validation</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\http\admin.h">
+      <Filter>source\server\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\http\config_tracker_impl.h">
+      <Filter>source\server\http</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\backtrace.h">
+      <Filter>source\server</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\configuration_impl.h">
+      <Filter>source\server</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\connection_handler_impl.h">
+      <Filter>source\server</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\drain_manager_impl.h">
+      <Filter>source\server</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\guarddog_impl.h">
+      <Filter>source\server</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\hot_restart_impl.h">
+      <Filter>source\server</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\hot_restart_nop_impl.h">
+      <Filter>source\server</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\init_manager_impl.h">
+      <Filter>source\server</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\lds_api.h">
+      <Filter>source\server</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\lds_subscription.h">
+      <Filter>source\server</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\listener_manager_impl.h">
+      <Filter>source\server</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\options_impl.h">
+      <Filter>source\server</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\proto_descriptors.h">
+      <Filter>source\server</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\server.h">
+      <Filter>source\server</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\test_hooks.h">
+      <Filter>source\server</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\watchdog_impl.h">
+      <Filter>source\server</Filter>
+    </ClInclude>
+    <ClInclude Include="source\server\worker_impl.h">
+      <Filter>source\server</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\common\access_log\access_log_formatter.cc">
+      <Filter>source\common\access_log</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\access_log\access_log_impl.cc">
+      <Filter>source\common\access_log</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\access_log\access_log_manager_impl.cc">
+      <Filter>source\common\access_log</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\api\api_impl.cc">
+      <Filter>source\common\api</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\api\os_sys_calls_impl.cc">
+      <Filter>source\common\api</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\buffer\buffer_impl.cc">
+      <Filter>source\common\buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\buffer\watermark_buffer.cc">
+      <Filter>source\common\buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\buffer\zero_copy_input_stream_impl.cc">
+      <Filter>source\common\buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\common\backoff_strategy.cc">
+      <Filter>source\common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\common\base64.cc">
+      <Filter>source\common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\common\hex.cc">
+      <Filter>source\common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\common\logger.cc">
+      <Filter>source\common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\common\logger_delegates.cc">
+      <Filter>source\common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\common\matchers.cc">
+      <Filter>source\common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\common\perf_annotation.cc">
+      <Filter>source\common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\common\thread.cc">
+      <Filter>source\common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\common\to_lower_table.cc">
+      <Filter>source\common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\common\token_bucket_impl.cc">
+      <Filter>source\common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\common\utility.cc">
+      <Filter>source\common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\common\version.cc">
+      <Filter>source\common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\common\version_linkstamp.cc">
+      <Filter>source\common\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\compressor\zlib_compressor_impl.cc">
+      <Filter>source\common\compressor</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\config\address_json.cc">
+      <Filter>source\common\config</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\config\base_json.cc">
+      <Filter>source\common\config</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\config\bootstrap_json.cc">
+      <Filter>source\common\config</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\config\cds_json.cc">
+      <Filter>source\common\config</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\config\datasource.cc">
+      <Filter>source\common\config</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\config\filter_json.cc">
+      <Filter>source\common\config</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\config\grpc_mux_impl.cc">
+      <Filter>source\common\config</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\config\lds_json.cc">
+      <Filter>source\common\config</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\config\metadata.cc">
+      <Filter>source\common\config</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\config\protocol_json.cc">
+      <Filter>source\common\config</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\config\rds_json.cc">
+      <Filter>source\common\config</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\config\tls_context_json.cc">
+      <Filter>source\common\config</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\config\utility.cc">
+      <Filter>source\common\config</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\config\well_known_names.cc">
+      <Filter>source\common\config</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\decompressor\zlib_decompressor_impl.cc">
+      <Filter>source\common\decompressor</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\event\dispatched_thread.cc">
+      <Filter>source\common\event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\event\dispatcher_impl.cc">
+      <Filter>source\common\event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\event\event_impl_base.cc">
+      <Filter>source\common\event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\event\file_event_impl.cc">
+      <Filter>source\common\event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\event\libevent.cc">
+      <Filter>source\common\event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\event\signal_impl.cc">
+      <Filter>source\common\event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\event\timer_impl.cc">
+      <Filter>source\common\event</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\filesystem\filesystem_impl.cc">
+      <Filter>source\common\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\filesystem\inotify\watcher_impl.cc">
+      <Filter>source\common\filesystem\inotify</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\filesystem\kqueue\watcher_impl.cc">
+      <Filter>source\common\filesystem\kqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\grpc\async_client_impl.cc">
+      <Filter>source\common\grpc</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\grpc\async_client_manager_impl.cc">
+      <Filter>source\common\grpc</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\grpc\codec.cc">
+      <Filter>source\common\grpc</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\grpc\common.cc">
+      <Filter>source\common\grpc</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\grpc\google_async_client_impl.cc">
+      <Filter>source\common\grpc</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\grpc\google_grpc_creds_impl.cc">
+      <Filter>source\common\grpc</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\grpc\status.cc">
+      <Filter>source\common\grpc</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\html\utility.cc">
+      <Filter>source\common\html</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\http\async_client_impl.cc">
+      <Filter>source\common\http</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\http\codec_client.cc">
+      <Filter>source\common\http</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\http\codes.cc">
+      <Filter>source\common\http</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\http\conn_manager_impl.cc">
+      <Filter>source\common\http</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\http\conn_manager_utility.cc">
+      <Filter>source\common\http</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\http\date_provider_impl.cc">
+      <Filter>source\common\http</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\http\filter_utility.cc">
+      <Filter>source\common\http</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\http\header_map_impl.cc">
+      <Filter>source\common\http</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\http\header_utility.cc">
+      <Filter>source\common\http</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\http\message_impl.cc">
+      <Filter>source\common\http</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\http\rest_api_fetcher.cc">
+      <Filter>source\common\http</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\http\user_agent.cc">
+      <Filter>source\common\http</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\http\utility.cc">
+      <Filter>source\common\http</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\http\http1\codec_impl.cc">
+      <Filter>source\common\http\http1</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\http\http1\conn_pool.cc">
+      <Filter>source\common\http\http1</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\http\http2\codec_impl.cc">
+      <Filter>source\common\http\http2</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\http\http2\conn_pool.cc">
+      <Filter>source\common\http\http2</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\http\websocket\ws_handler_impl.cc">
+      <Filter>source\common\http\websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\json\config_schemas.cc">
+      <Filter>source\common\json</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\json\json_loader.cc">
+      <Filter>source\common\json</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\memory\stats.cc">
+      <Filter>source\common\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\network\addr_family_aware_socket_option_impl.cc">
+      <Filter>source\common\network</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\network\address_impl.cc">
+      <Filter>source\common\network</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\network\cidr_range.cc">
+      <Filter>source\common\network</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\network\connection_impl.cc">
+      <Filter>source\common\network</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\network\dns_impl.cc">
+      <Filter>source\common\network</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\network\filter_manager_impl.cc">
+      <Filter>source\common\network</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\network\listen_socket_impl.cc">
+      <Filter>source\common\network</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\network\listener_impl.cc">
+      <Filter>source\common\network</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\network\raw_buffer_socket.cc">
+      <Filter>source\common\network</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\network\resolver_impl.cc">
+      <Filter>source\common\network</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\network\socket_option_factory.cc">
+      <Filter>source\common\network</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\network\socket_option_impl.cc">
+      <Filter>source\common\network</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\network\utility.cc">
+      <Filter>source\common\network</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\upstream\cds_api_impl.cc">
+      <Filter>source\common\upstream</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\upstream\cds_subscription.cc">
+      <Filter>source\common\upstream</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\upstream\cluster_manager_impl.cc">
+      <Filter>source\common\upstream</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\upstream\eds.cc">
+      <Filter>source\common\upstream</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\upstream\health_checker_base_impl.cc">
+      <Filter>source\common\upstream</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\upstream\health_checker_impl.cc">
+      <Filter>source\common\upstream</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\upstream\health_discovery_service.cc">
+      <Filter>source\common\upstream</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\upstream\host_utility.cc">
+      <Filter>source\common\upstream</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\upstream\load_balancer_impl.cc">
+      <Filter>source\common\upstream</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\upstream\load_stats_reporter.cc">
+      <Filter>source\common\upstream</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\upstream\logical_dns_cluster.cc">
+      <Filter>source\common\upstream</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\upstream\maglev_lb.cc">
+      <Filter>source\common\upstream</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\upstream\original_dst_cluster.cc">
+      <Filter>source\common\upstream</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\upstream\outlier_detection_impl.cc">
+      <Filter>source\common\upstream</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\upstream\ring_hash_lb.cc">
+      <Filter>source\common\upstream</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\upstream\sds_subscription.cc">
+      <Filter>source\common\upstream</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\upstream\subset_lb.cc">
+      <Filter>source\common\upstream</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\upstream\thread_aware_lb_impl.cc">
+      <Filter>source\common\upstream</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\upstream\upstream_impl.cc">
+      <Filter>source\common\upstream</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\tracing\http_tracer_impl.cc">
+      <Filter>source\common\tracing</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\thread_local\thread_local_impl.cc">
+      <Filter>source\common\thread_local</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\tcp_proxy\tcp_proxy.cc">
+      <Filter>source\common\tcp_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\tcp\conn_pool.cc">
+      <Filter>source\common\tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\stats\stats_impl.cc">
+      <Filter>source\common\stats</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\stats\thread_local_store.cc">
+      <Filter>source\common\stats</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\ssl\context_config_impl.cc">
+      <Filter>source\common\ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\ssl\context_impl.cc">
+      <Filter>source\common\ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\ssl\context_manager_impl.cc">
+      <Filter>source\common\ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\ssl\ssl_socket.cc">
+      <Filter>source\common\ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\ssl\tls_certificate_config_impl.cc">
+      <Filter>source\common\ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\ssl\utility.cc">
+      <Filter>source\common\ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\singleton\manager_impl.cc">
+      <Filter>source\common\singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\secret\secret_manager_impl.cc">
+      <Filter>source\common\secret</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\runtime\runtime_impl.cc">
+      <Filter>source\common\runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\runtime\uuid_util.cc">
+      <Filter>source\common\runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\router\config_impl.cc">
+      <Filter>source\common\router</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\router\config_utility.cc">
+      <Filter>source\common\router</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\router\header_formatter.cc">
+      <Filter>source\common\router</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\router\header_parser.cc">
+      <Filter>source\common\router</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\router\rds_impl.cc">
+      <Filter>source\common\router</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\router\rds_subscription.cc">
+      <Filter>source\common\router</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\router\retry_state_impl.cc">
+      <Filter>source\common\router</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\router\router.cc">
+      <Filter>source\common\router</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\router\router_ratelimit.cc">
+      <Filter>source\common\router</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\router\shadow_writer_impl.cc">
+      <Filter>source\common\router</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\request_info\utility.cc">
+      <Filter>source\common\request_info</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\ratelimit\ratelimit_impl.cc">
+      <Filter>source\common\ratelimit</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\protobuf\utility.cc">
+      <Filter>source\common\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common\profiler\profiler.cc">
+      <Filter>source\common\profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="source\exe\main.cc">
+      <Filter>source\exe</Filter>
+    </ClCompile>
+    <ClCompile Include="source\exe\main_common.cc">
+      <Filter>source\exe</Filter>
+    </ClCompile>
+    <ClCompile Include="source\exe\signal_action.cc">
+      <Filter>source\exe</Filter>
+    </ClCompile>
+    <ClCompile Include="source\exe\terminate_handler.cc">
+      <Filter>source\exe</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\access_loggers\file\config.cc">
+      <Filter>source\extensions\access_logers\file</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\access_loggers\file\file_access_log_impl.cc">
+      <Filter>source\extensions\access_logers\file</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\access_loggers\http_grpc\config.cc">
+      <Filter>source\extensions\access_logers\http_grpc</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\access_loggers\http_grpc\grpc_access_log_impl.cc">
+      <Filter>source\extensions\access_logers\http_grpc</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\common\ext_authz\check_request_utils.cc">
+      <Filter>source\extensions\filters\common\ext_authz</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\common\ext_authz\ext_authz_grpc_impl.cc">
+      <Filter>source\extensions\filters\common\ext_authz</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\common\ext_authz\ext_authz_http_impl.cc">
+      <Filter>source\extensions\filters\common\ext_authz</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\common\lua\lua.cc">
+      <Filter>source\extensions\filters\common\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\common\lua\wrappers.cc">
+      <Filter>source\extensions\filters\common\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\common\rbac\engine_impl.cc">
+      <Filter>source\extensions\filters\common\rbac</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\common\rbac\matchers.cc">
+      <Filter>source\extensions\filters\common\rbac</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\buffer\buffer_filter.cc">
+      <Filter>source\extensions\filters\http\buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\buffer\config.cc">
+      <Filter>source\extensions\filters\http\buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\cors\config.cc">
+      <Filter>source\extensions\filters\http\cors</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\cors\cors_filter.cc">
+      <Filter>source\extensions\filters\http\cors</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\dynamo\config.cc">
+      <Filter>source\extensions\filters\http\dynamo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\dynamo\dynamo_filter.cc">
+      <Filter>source\extensions\filters\http\dynamo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\dynamo\dynamo_request_parser.cc">
+      <Filter>source\extensions\filters\http\dynamo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\dynamo\dynamo_utility.cc">
+      <Filter>source\extensions\filters\http\dynamo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\ext_authz\config.cc">
+      <Filter>source\extensions\filters\http\ext_authz</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\ext_authz\ext_authz.cc">
+      <Filter>source\extensions\filters\http\ext_authz</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\fault\config.cc">
+      <Filter>source\extensions\filters\http\fault</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\fault\fault_filter.cc">
+      <Filter>source\extensions\filters\http\fault</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\grpc_http1_bridge\config.cc">
+      <Filter>source\extensions\filters\http\grpc_http1_bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\grpc_http1_bridge\http1_bridge_filter.cc">
+      <Filter>source\extensions\filters\http\grpc_http1_bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\grpc_json_transcoder\config.cc">
+      <Filter>source\extensions\filters\http\grpc_json_transcoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\grpc_json_transcoder\json_transcoder_filter.cc">
+      <Filter>source\extensions\filters\http\grpc_json_transcoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\grpc_json_transcoder\transcoder_input_stream_impl.cc">
+      <Filter>source\extensions\filters\http\grpc_json_transcoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\grpc_web\config.cc">
+      <Filter>source\extensions\filters\http\grpc_web</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\grpc_web\grpc_web_filter.cc">
+      <Filter>source\extensions\filters\http\grpc_web</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\gzip\config.cc">
+      <Filter>source\extensions\filters\http\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\gzip\gzip_filter.cc">
+      <Filter>source\extensions\filters\http\gzip</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\header_to_metadata\config.cc">
+      <Filter>source\extensions\filters\http\header_to_metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\header_to_metadata\header_to_metadata_filter.cc">
+      <Filter>source\extensions\filters\http\header_to_metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\health_check\config.cc">
+      <Filter>source\extensions\filters\http\health_check</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\health_check\health_check.cc">
+      <Filter>source\extensions\filters\http\health_check</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\ip_tagging\config.cc">
+      <Filter>source\extensions\filters\http\ip_tagging</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\ip_tagging\ip_tagging_filter.cc">
+      <Filter>source\extensions\filters\http\ip_tagging</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\jwt_authn\authenticator.cc">
+      <Filter>source\extensions\filters\http\jwt_authn</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\jwt_authn\extractor.cc">
+      <Filter>source\extensions\filters\http\jwt_authn</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\jwt_authn\filter.cc">
+      <Filter>source\extensions\filters\http\jwt_authn</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\jwt_authn\filter_factory.cc">
+      <Filter>source\extensions\filters\http\jwt_authn</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\jwt_authn\jwks_cache.cc">
+      <Filter>source\extensions\filters\http\jwt_authn</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\lua\config.cc">
+      <Filter>source\extensions\filters\http\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\lua\lua_filter.cc">
+      <Filter>source\extensions\filters\http\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\lua\wrappers.cc">
+      <Filter>source\extensions\filters\http\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\squash\config.cc">
+      <Filter>source\extensions\filters\http\squash</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\squash\squash_filter.cc">
+      <Filter>source\extensions\filters\http\squash</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\router\config.cc">
+      <Filter>source\extensions\filters\http\router</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\rbac\config.cc">
+      <Filter>source\extensions\filters\http\rbac</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\rbac\rbac_filter.cc">
+      <Filter>source\extensions\filters\http\rbac</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\ratelimit\config.cc">
+      <Filter>source\extensions\filters\http\ratelimit</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\http\ratelimit\ratelimit.cc">
+      <Filter>source\extensions\filters\http\ratelimit</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\listener\original_dst\config.cc">
+      <Filter>source\extensions\filters\listener\tls_inspector</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\listener\original_dst\original_dst.cc">
+      <Filter>source\extensions\filters\listener\tls_inspector</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\listener\proxy_protocol\config.cc">
+      <Filter>source\extensions\filters\listener\proxy_protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\listener\proxy_protocol\proxy_protocol.cc">
+      <Filter>source\extensions\filters\listener\proxy_protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\listener\tls_inspector\config.cc">
+      <Filter>source\extensions\filters\listener\original_dst</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\listener\tls_inspector\tls_inspector.cc">
+      <Filter>source\extensions\filters\listener\original_dst</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\client_ssl_auth\client_ssl_auth.cc">
+      <Filter>source\extensions\filters\network\client_ssl_auth</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\client_ssl_auth\config.cc">
+      <Filter>source\extensions\filters\network\client_ssl_auth</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\echo\config.cc">
+      <Filter>source\extensions\filters\network\echo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\echo\echo.cc">
+      <Filter>source\extensions\filters\network\echo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\ext_authz\config.cc">
+      <Filter>source\extensions\filters\network\ext_authz</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\ext_authz\ext_authz.cc">
+      <Filter>source\extensions\filters\network\ext_authz</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\http_connection_manager\config.cc">
+      <Filter>source\extensions\filters\network\http_connectinon_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\mongo_proxy\bson_impl.cc">
+      <Filter>source\extensions\filters\network\mongo_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\mongo_proxy\codec_impl.cc">
+      <Filter>source\extensions\filters\network\mongo_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\mongo_proxy\config.cc">
+      <Filter>source\extensions\filters\network\mongo_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\mongo_proxy\proxy.cc">
+      <Filter>source\extensions\filters\network\mongo_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\mongo_proxy\utility.cc">
+      <Filter>source\extensions\filters\network\mongo_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\thrift_proxy\binary_protocol_impl.cc">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\thrift_proxy\buffer_helper.cc">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\thrift_proxy\compact_protocol_impl.cc">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\thrift_proxy\config.cc">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\thrift_proxy\decoder.cc">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\thrift_proxy\filter.cc">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\thrift_proxy\framed_transport_impl.cc">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\thrift_proxy\protocol_impl.cc">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\thrift_proxy\transport_impl.cc">
+      <Filter>source\extensions\filters\network\thrift_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\tcp_proxy\config.cc">
+      <Filter>source\extensions\filters\network\tcp_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\redis_proxy\codec_impl.cc">
+      <Filter>source\extensions\filters\network\redis_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\redis_proxy\command_splitter_impl.cc">
+      <Filter>source\extensions\filters\network\redis_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\redis_proxy\config.cc">
+      <Filter>source\extensions\filters\network\redis_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\redis_proxy\conn_pool_impl.cc">
+      <Filter>source\extensions\filters\network\redis_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\redis_proxy\proxy_filter.cc">
+      <Filter>source\extensions\filters\network\redis_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\ratelimit\config.cc">
+      <Filter>source\extensions\filters\network\ratelimit</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\filters\network\ratelimit\ratelimit.cc">
+      <Filter>source\extensions\filters\network\ratelimit</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\grpc_credentials\example\config.cc">
+      <Filter>source\extensions\grpc_credentials\example</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\grpc_credentials\file_based_metadata\config.cc">
+      <Filter>source\extensions\grpc_credentials\file_based_metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\health_checkers\redis\config.cc">
+      <Filter>source\extensions\health_checkers\redis</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\health_checkers\redis\redis.cc">
+      <Filter>source\extensions\health_checkers\redis</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\transport_sockets\alts\tsi_handshaker.cc">
+      <Filter>source\extensions\transport_sockets\alts</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\transport_sockets\capture\capture.cc">
+      <Filter>source\extensions\transport_sockets\capture</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\transport_sockets\capture\config.cc">
+      <Filter>source\extensions\transport_sockets\capture</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\transport_sockets\ssl\config.cc">
+      <Filter>source\extensions\transport_sockets\ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\transport_sockets\raw_buffer\config.cc">
+      <Filter>source\extensions\transport_sockets\raw_buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\tracers\common\ot\opentracing_driver_impl.cc">
+      <Filter>source\extensions\tracers\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\tracers\dynamic_ot\config.cc">
+      <Filter>source\extensions\tracers\dynamic_ot</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\tracers\dynamic_ot\dynamic_opentracing_driver_impl.cc">
+      <Filter>source\extensions\tracers\dynamic_ot</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\tracers\lightstep\config.cc">
+      <Filter>source\extensions\tracers\lightstep</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\tracers\lightstep\lightstep_tracer_impl.cc">
+      <Filter>source\extensions\tracers\lightstep</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\tracers\zipkin\config.cc">
+      <Filter>source\extensions\tracers\zipkin</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\tracers\zipkin\span_buffer.cc">
+      <Filter>source\extensions\tracers\zipkin</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\tracers\zipkin\span_context.cc">
+      <Filter>source\extensions\tracers\zipkin</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\tracers\zipkin\tracer.cc">
+      <Filter>source\extensions\tracers\zipkin</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\tracers\zipkin\util.cc">
+      <Filter>source\extensions\tracers\zipkin</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\tracers\zipkin\zipkin_core_types.cc">
+      <Filter>source\extensions\tracers\zipkin</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\tracers\zipkin\zipkin_tracer_impl.cc">
+      <Filter>source\extensions\tracers\zipkin</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\stat_sinks\common\statsd\statsd.cc">
+      <Filter>source\extensions\stat_sinks\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\stat_sinks\dog_statsd\config.cc">
+      <Filter>source\extensions\stat_sinks\dog_statsd</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\stat_sinks\hystrix\config.cc">
+      <Filter>source\extensions\stat_sinks\hystrix</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\stat_sinks\hystrix\hystrix.cc">
+      <Filter>source\extensions\stat_sinks\hystrix</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\stat_sinks\metrics_service\config.cc">
+      <Filter>source\extensions\stat_sinks\metrics_service</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\stat_sinks\metrics_service\grpc_metrics_service_impl.cc">
+      <Filter>source\extensions\stat_sinks\metrics_service</Filter>
+    </ClCompile>
+    <ClCompile Include="source\extensions\stat_sinks\statsd\config.cc">
+      <Filter>source\extensions\stat_sinks\statsd</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\config_validation\admin.cc">
+      <Filter>source\server\config_validation</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\config_validation\api.cc">
+      <Filter>source\server\config_validation</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\config_validation\async_client.cc">
+      <Filter>source\server\config_validation</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\config_validation\cluster_manager.cc">
+      <Filter>source\server\config_validation</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\config_validation\dispatcher.cc">
+      <Filter>source\server\config_validation</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\config_validation\dns.cc">
+      <Filter>source\server\config_validation</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\config_validation\server.cc">
+      <Filter>source\server\config_validation</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\http\admin.cc">
+      <Filter>source\server\http</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\http\config_tracker_impl.cc">
+      <Filter>source\server\http</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\configuration_impl.cc">
+      <Filter>source\server</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\connection_handler_impl.cc">
+      <Filter>source\server</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\drain_manager_impl.cc">
+      <Filter>source\server</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\guarddog_impl.cc">
+      <Filter>source\server</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\hot_restart_impl.cc">
+      <Filter>source\server</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\init_manager_impl.cc">
+      <Filter>source\server</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\lds_api.cc">
+      <Filter>source\server</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\lds_subscription.cc">
+      <Filter>source\server</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\listener_manager_impl.cc">
+      <Filter>source\server</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\options_impl.cc">
+      <Filter>source\server</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\proto_descriptors.cc">
+      <Filter>source\server</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\server.cc">
+      <Filter>source\server</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\watchdog_impl.cc">
+      <Filter>source\server</Filter>
+    </ClCompile>
+    <ClCompile Include="source\server\worker_impl.cc">
+      <Filter>source\server</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,853 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FF380EBE-E8D7-4298-A100-F8F614691897}</ProjectGuid>
+    <RootNamespace>EnvoyStudy</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)include;$(SolutionDir)include\source\extensions;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\Github\envoystudy\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\envoy\access_log\access_log.h" />
+    <ClInclude Include="include\envoy\api\api.h" />
+    <ClInclude Include="include\envoy\api\os_sys_calls.h" />
+    <ClInclude Include="include\envoy\buffer\buffer.h" />
+    <ClInclude Include="include\envoy\common\backoff_strategy.h" />
+    <ClInclude Include="include\envoy\common\callback.h" />
+    <ClInclude Include="include\envoy\common\exception.h" />
+    <ClInclude Include="include\envoy\common\interval_set.h" />
+    <ClInclude Include="include\envoy\common\pure.h" />
+    <ClInclude Include="include\envoy\common\time.h" />
+    <ClInclude Include="include\envoy\common\token_bucket.h" />
+    <ClInclude Include="include\envoy\compressor\compressor.h" />
+    <ClInclude Include="include\envoy\config\grpc_mux.h" />
+    <ClInclude Include="include\envoy\config\subscription.h" />
+    <ClInclude Include="include\envoy\decompressor\decompressor.h" />
+    <ClInclude Include="include\envoy\event\deferred_deletable.h" />
+    <ClInclude Include="include\envoy\event\dispatcher.h" />
+    <ClInclude Include="include\envoy\event\file_event.h" />
+    <ClInclude Include="include\envoy\event\signal.h" />
+    <ClInclude Include="include\envoy\event\timer.h" />
+    <ClInclude Include="include\envoy\filesystem\filesystem.h" />
+    <ClInclude Include="include\envoy\grpc\async_client.h" />
+    <ClInclude Include="include\envoy\grpc\async_client_manager.h" />
+    <ClInclude Include="include\envoy\grpc\google_grpc_creds.h" />
+    <ClInclude Include="include\envoy\grpc\status.h" />
+    <ClInclude Include="include\envoy\http\async_client.h" />
+    <ClInclude Include="include\envoy\http\codec.h" />
+    <ClInclude Include="include\envoy\http\codes.h" />
+    <ClInclude Include="include\envoy\http\conn_pool.h" />
+    <ClInclude Include="include\envoy\http\filter.h" />
+    <ClInclude Include="include\envoy\http\header_map.h" />
+    <ClInclude Include="include\envoy\http\message.h" />
+    <ClInclude Include="include\envoy\http\protocol.h" />
+    <ClInclude Include="include\envoy\http\query_params.h" />
+    <ClInclude Include="include\envoy\http\websocket.h" />
+    <ClInclude Include="include\envoy\init\init.h" />
+    <ClInclude Include="include\envoy\json\json_object.h" />
+    <ClInclude Include="include\envoy\local_info\local_info.h" />
+    <ClInclude Include="include\envoy\network\address.h" />
+    <ClInclude Include="include\envoy\network\connection.h" />
+    <ClInclude Include="include\envoy\network\connection_handler.h" />
+    <ClInclude Include="include\envoy\network\dns.h" />
+    <ClInclude Include="include\envoy\network\drain_decision.h" />
+    <ClInclude Include="include\envoy\network\filter.h" />
+    <ClInclude Include="include\envoy\network\listener.h" />
+    <ClInclude Include="include\envoy\network\listen_socket.h" />
+    <ClInclude Include="include\envoy\network\resolver.h" />
+    <ClInclude Include="include\envoy\network\transport_socket.h" />
+    <ClInclude Include="include\envoy\ratelimit\ratelimit.h" />
+    <ClInclude Include="include\envoy\registry\registry.h" />
+    <ClInclude Include="include\envoy\request_info\request_info.h" />
+    <ClInclude Include="include\envoy\router\rds.h" />
+    <ClInclude Include="include\envoy\router\router.h" />
+    <ClInclude Include="include\envoy\router\router_ratelimit.h" />
+    <ClInclude Include="include\envoy\router\route_config_provider_manager.h" />
+    <ClInclude Include="include\envoy\router\shadow_writer.h" />
+    <ClInclude Include="include\envoy\runtime\runtime.h" />
+    <ClInclude Include="include\envoy\secret\secret_manager.h" />
+    <ClInclude Include="include\envoy\server\access_log_config.h" />
+    <ClInclude Include="include\envoy\server\admin.h" />
+    <ClInclude Include="include\envoy\server\configuration.h" />
+    <ClInclude Include="include\envoy\server\config_tracker.h" />
+    <ClInclude Include="include\envoy\server\drain_manager.h" />
+    <ClInclude Include="include\envoy\server\filter_config.h" />
+    <ClInclude Include="include\envoy\server\guarddog.h" />
+    <ClInclude Include="include\envoy\server\health_checker_config.h" />
+    <ClInclude Include="include\envoy\server\hot_restart.h" />
+    <ClInclude Include="include\envoy\server\instance.h" />
+    <ClInclude Include="include\envoy\server\listener_manager.h" />
+    <ClInclude Include="include\envoy\server\options.h" />
+    <ClInclude Include="include\envoy\server\transport_socket_config.h" />
+    <ClInclude Include="include\envoy\server\watchdog.h" />
+    <ClInclude Include="include\envoy\server\worker.h" />
+    <ClInclude Include="include\envoy\singleton\instance.h" />
+    <ClInclude Include="include\envoy\singleton\manager.h" />
+    <ClInclude Include="include\envoy\ssl\connection.h" />
+    <ClInclude Include="include\envoy\ssl\context.h" />
+    <ClInclude Include="include\envoy\ssl\context_config.h" />
+    <ClInclude Include="include\envoy\ssl\context_manager.h" />
+    <ClInclude Include="include\envoy\ssl\tls_certificate_config.h" />
+    <ClInclude Include="include\envoy\stats\stats.h" />
+    <ClInclude Include="include\envoy\stats\stats_macros.h" />
+    <ClInclude Include="include\envoy\stats\timespan.h" />
+    <ClInclude Include="include\envoy\tcp\conn_pool.h" />
+    <ClInclude Include="include\envoy\thread\thread.h" />
+    <ClInclude Include="include\envoy\thread_local\thread_local.h" />
+    <ClInclude Include="include\envoy\tracing\http_tracer.h" />
+    <ClInclude Include="include\envoy\upstream\cluster_manager.h" />
+    <ClInclude Include="include\envoy\upstream\health_checker.h" />
+    <ClInclude Include="include\envoy\upstream\health_check_host_monitor.h" />
+    <ClInclude Include="include\envoy\upstream\host_description.h" />
+    <ClInclude Include="include\envoy\upstream\load_balancer.h" />
+    <ClInclude Include="include\envoy\upstream\load_balancer_type.h" />
+    <ClInclude Include="include\envoy\upstream\outlier_detection.h" />
+    <ClInclude Include="include\envoy\upstream\resource_manager.h" />
+    <ClInclude Include="include\envoy\upstream\thread_local_cluster.h" />
+    <ClInclude Include="include\envoy\upstream\upstream.h" />
+    <ClInclude Include="source\common\access_log\access_log_formatter.h" />
+    <ClInclude Include="source\common\access_log\access_log_impl.h" />
+    <ClInclude Include="source\common\access_log\access_log_manager_impl.h" />
+    <ClInclude Include="source\common\api\api_impl.h" />
+    <ClInclude Include="source\common\api\os_sys_calls_impl.h" />
+    <ClInclude Include="source\common\buffer\buffer_impl.h" />
+    <ClInclude Include="source\common\buffer\watermark_buffer.h" />
+    <ClInclude Include="source\common\buffer\zero_copy_input_stream_impl.h" />
+    <ClInclude Include="source\common\common\assert.h" />
+    <ClInclude Include="source\common\common\backoff_strategy.h" />
+    <ClInclude Include="source\common\common\base64.h" />
+    <ClInclude Include="source\common\common\block_memory_hash_set.h" />
+    <ClInclude Include="source\common\common\byte_order.h" />
+    <ClInclude Include="source\common\common\callback_impl.h" />
+    <ClInclude Include="source\common\common\cleanup.h" />
+    <ClInclude Include="source\common\common\compiler_requirements.h" />
+    <ClInclude Include="source\common\common\c_smart_ptr.h" />
+    <ClInclude Include="source\common\common\empty_string.h" />
+    <ClInclude Include="source\common\common\enum_to_int.h" />
+    <ClInclude Include="source\common\common\fmt.h" />
+    <ClInclude Include="source\common\common\hash.h" />
+    <ClInclude Include="source\common\common\hex.h" />
+    <ClInclude Include="source\common\common\linked_object.h" />
+    <ClInclude Include="source\common\common\lock_guard.h" />
+    <ClInclude Include="source\common\common\logger.h" />
+    <ClInclude Include="source\common\common\logger_delegates.h" />
+    <ClInclude Include="source\common\common\macros.h" />
+    <ClInclude Include="source\common\common\matchers.h" />
+    <ClInclude Include="source\common\common\non_copyable.h" />
+    <ClInclude Include="source\common\common\perf_annotation.h" />
+    <ClInclude Include="source\common\common\stl_helpers.h" />
+    <ClInclude Include="source\common\common\thread.h" />
+    <ClInclude Include="source\common\common\thread_annotations.h" />
+    <ClInclude Include="source\common\common\token_bucket_impl.h" />
+    <ClInclude Include="source\common\common\to_lower_table.h" />
+    <ClInclude Include="source\common\common\utility.h" />
+    <ClInclude Include="source\common\common\version.h" />
+    <ClInclude Include="source\common\compressor\zlib_compressor_impl.h" />
+    <ClInclude Include="source\common\config\address_json.h" />
+    <ClInclude Include="source\common\config\base_json.h" />
+    <ClInclude Include="source\common\config\bootstrap_json.h" />
+    <ClInclude Include="source\common\config\cds_json.h" />
+    <ClInclude Include="source\common\config\datasource.h" />
+    <ClInclude Include="source\common\config\filesystem_subscription_impl.h" />
+    <ClInclude Include="source\common\config\filter_json.h" />
+    <ClInclude Include="source\common\config\grpc_mux_impl.h" />
+    <ClInclude Include="source\common\config\grpc_mux_subscription_impl.h" />
+    <ClInclude Include="source\common\config\grpc_subscription_impl.h" />
+    <ClInclude Include="source\common\config\http_subscription_impl.h" />
+    <ClInclude Include="source\common\config\json_utility.h" />
+    <ClInclude Include="source\common\config\lds_json.h" />
+    <ClInclude Include="source\common\config\metadata.h" />
+    <ClInclude Include="source\common\config\protobuf_link_hacks.h" />
+    <ClInclude Include="source\common\config\protocol_json.h" />
+    <ClInclude Include="source\common\config\rds_json.h" />
+    <ClInclude Include="source\common\config\resources.h" />
+    <ClInclude Include="source\common\config\subscription_factory.h" />
+    <ClInclude Include="source\common\config\tls_context_json.h" />
+    <ClInclude Include="source\common\config\utility.h" />
+    <ClInclude Include="source\common\config\well_known_names.h" />
+    <ClInclude Include="source\common\decompressor\zlib_decompressor_impl.h" />
+    <ClInclude Include="source\common\event\dispatched_thread.h" />
+    <ClInclude Include="source\common\event\dispatcher_impl.h" />
+    <ClInclude Include="source\common\event\event_impl_base.h" />
+    <ClInclude Include="source\common\event\file_event_impl.h" />
+    <ClInclude Include="source\common\event\libevent.h" />
+    <ClInclude Include="source\common\event\signal_impl.h" />
+    <ClInclude Include="source\common\event\timer_impl.h" />
+    <ClInclude Include="source\common\filesystem\filesystem_impl.h" />
+    <ClInclude Include="source\common\filesystem\inotify\watcher_impl.h" />
+    <ClInclude Include="source\common\filesystem\kqueue\watcher_impl.h" />
+    <ClInclude Include="source\common\grpc\async_client_impl.h" />
+    <ClInclude Include="source\common\grpc\async_client_manager_impl.h" />
+    <ClInclude Include="source\common\grpc\codec.h" />
+    <ClInclude Include="source\common\grpc\common.h" />
+    <ClInclude Include="source\common\grpc\google_async_client_impl.h" />
+    <ClInclude Include="source\common\grpc\google_grpc_creds_impl.h" />
+    <ClInclude Include="source\common\grpc\status.h" />
+    <ClInclude Include="source\common\html\utility.h" />
+    <ClInclude Include="source\common\http\async_client_impl.h" />
+    <ClInclude Include="source\common\http\codec_client.h" />
+    <ClInclude Include="source\common\http\codec_helper.h" />
+    <ClInclude Include="source\common\http\codec_wrappers.h" />
+    <ClInclude Include="source\common\http\codes.h" />
+    <ClInclude Include="source\common\http\conn_manager_config.h" />
+    <ClInclude Include="source\common\http\conn_manager_impl.h" />
+    <ClInclude Include="source\common\http\conn_manager_utility.h" />
+    <ClInclude Include="source\common\http\date_provider.h" />
+    <ClInclude Include="source\common\http\date_provider_impl.h" />
+    <ClInclude Include="source\common\http\default_server_string.h" />
+    <ClInclude Include="source\common\http\exception.h" />
+    <ClInclude Include="source\common\http\filter_utility.h" />
+    <ClInclude Include="source\common\http\headers.h" />
+    <ClInclude Include="source\common\http\header_map_impl.h" />
+    <ClInclude Include="source\common\http\header_utility.h" />
+    <ClInclude Include="source\common\http\http1\codec_impl.h" />
+    <ClInclude Include="source\common\http\http1\conn_pool.h" />
+    <ClInclude Include="source\common\http\http2\codec_impl.h" />
+    <ClInclude Include="source\common\http\http2\conn_pool.h" />
+    <ClInclude Include="source\common\http\message_impl.h" />
+    <ClInclude Include="source\common\http\rest_api_fetcher.h" />
+    <ClInclude Include="source\common\http\user_agent.h" />
+    <ClInclude Include="source\common\http\utility.h" />
+    <ClInclude Include="source\common\http\websocket\ws_handler_impl.h" />
+    <ClInclude Include="source\common\json\config_schemas.h" />
+    <ClInclude Include="source\common\json\json_loader.h" />
+    <ClInclude Include="source\common\json\json_validator.h" />
+    <ClInclude Include="source\common\local_info\local_info_impl.h" />
+    <ClInclude Include="source\common\memory\stats.h" />
+    <ClInclude Include="source\common\network\address_impl.h" />
+    <ClInclude Include="source\common\network\addr_family_aware_socket_option_impl.h" />
+    <ClInclude Include="source\common\network\cidr_range.h" />
+    <ClInclude Include="source\common\network\connection_impl.h" />
+    <ClInclude Include="source\common\network\dns_impl.h" />
+    <ClInclude Include="source\common\network\filter_impl.h" />
+    <ClInclude Include="source\common\network\filter_manager_impl.h" />
+    <ClInclude Include="source\common\network\lc_trie.h" />
+    <ClInclude Include="source\common\network\listener_impl.h" />
+    <ClInclude Include="source\common\network\listen_socket_impl.h" />
+    <ClInclude Include="source\common\network\raw_buffer_socket.h" />
+    <ClInclude Include="source\common\network\resolver_impl.h" />
+    <ClInclude Include="source\common\network\socket_option_factory.h" />
+    <ClInclude Include="source\common\network\socket_option_impl.h" />
+    <ClInclude Include="source\common\network\utility.h" />
+    <ClInclude Include="source\common\profiler\profiler.h" />
+    <ClInclude Include="source\common\protobuf\protobuf.h" />
+    <ClInclude Include="source\common\protobuf\utility.h" />
+    <ClInclude Include="source\common\ratelimit\ratelimit_impl.h" />
+    <ClInclude Include="source\common\request_info\request_info_impl.h" />
+    <ClInclude Include="source\common\request_info\utility.h" />
+    <ClInclude Include="source\common\router\config_impl.h" />
+    <ClInclude Include="source\common\router\config_utility.h" />
+    <ClInclude Include="source\common\router\header_formatter.h" />
+    <ClInclude Include="source\common\router\header_parser.h" />
+    <ClInclude Include="source\common\router\metadatamatchcriteria_impl.h" />
+    <ClInclude Include="source\common\router\rds_impl.h" />
+    <ClInclude Include="source\common\router\rds_subscription.h" />
+    <ClInclude Include="source\common\router\retry_state_impl.h" />
+    <ClInclude Include="source\common\router\router.h" />
+    <ClInclude Include="source\common\router\router_ratelimit.h" />
+    <ClInclude Include="source\common\router\shadow_writer_impl.h" />
+    <ClInclude Include="source\common\runtime\runtime_impl.h" />
+    <ClInclude Include="source\common\runtime\uuid_util.h" />
+    <ClInclude Include="source\common\secret\secret_manager_impl.h" />
+    <ClInclude Include="source\common\singleton\const_singleton.h" />
+    <ClInclude Include="source\common\singleton\manager_impl.h" />
+    <ClInclude Include="source\common\singleton\threadsafe_singleton.h" />
+    <ClInclude Include="source\common\ssl\context_config_impl.h" />
+    <ClInclude Include="source\common\ssl\context_impl.h" />
+    <ClInclude Include="source\common\ssl\context_manager_impl.h" />
+    <ClInclude Include="source\common\ssl\ssl_socket.h" />
+    <ClInclude Include="source\common\ssl\tls_certificate_config_impl.h" />
+    <ClInclude Include="source\common\ssl\utility.h" />
+    <ClInclude Include="source\common\stats\stats_impl.h" />
+    <ClInclude Include="source\common\stats\thread_local_store.h" />
+    <ClInclude Include="source\common\tcp\conn_pool.h" />
+    <ClInclude Include="source\common\tcp_proxy\tcp_proxy.h" />
+    <ClInclude Include="source\common\thread_local\thread_local_impl.h" />
+    <ClInclude Include="source\common\tracing\http_tracer_impl.h" />
+    <ClInclude Include="source\common\upstream\cds_api_impl.h" />
+    <ClInclude Include="source\common\upstream\cds_subscription.h" />
+    <ClInclude Include="source\common\upstream\cluster_manager_impl.h" />
+    <ClInclude Include="source\common\upstream\edf_scheduler.h" />
+    <ClInclude Include="source\common\upstream\eds.h" />
+    <ClInclude Include="source\common\upstream\health_checker_base_impl.h" />
+    <ClInclude Include="source\common\upstream\health_checker_impl.h" />
+    <ClInclude Include="source\common\upstream\health_discovery_service.h" />
+    <ClInclude Include="source\common\upstream\host_utility.h" />
+    <ClInclude Include="source\common\upstream\load_balancer_impl.h" />
+    <ClInclude Include="source\common\upstream\load_stats_reporter.h" />
+    <ClInclude Include="source\common\upstream\locality.h" />
+    <ClInclude Include="source\common\upstream\logical_dns_cluster.h" />
+    <ClInclude Include="source\common\upstream\maglev_lb.h" />
+    <ClInclude Include="source\common\upstream\original_dst_cluster.h" />
+    <ClInclude Include="source\common\upstream\outlier_detection_impl.h" />
+    <ClInclude Include="source\common\upstream\resource_manager_impl.h" />
+    <ClInclude Include="source\common\upstream\ring_hash_lb.h" />
+    <ClInclude Include="source\common\upstream\sds_subscription.h" />
+    <ClInclude Include="source\common\upstream\subset_lb.h" />
+    <ClInclude Include="source\common\upstream\thread_aware_lb_impl.h" />
+    <ClInclude Include="source\common\upstream\upstream_impl.h" />
+    <ClInclude Include="source\exe\main_common.h" />
+    <ClInclude Include="source\exe\signal_action.h" />
+    <ClInclude Include="source\exe\terminate_handler.h" />
+    <ClInclude Include="source\extensions\access_loggers\file\config.h" />
+    <ClInclude Include="source\extensions\access_loggers\file\file_access_log_impl.h" />
+    <ClInclude Include="source\extensions\access_loggers\http_grpc\config.h" />
+    <ClInclude Include="source\extensions\access_loggers\http_grpc\grpc_access_log_impl.h" />
+    <ClInclude Include="source\extensions\access_loggers\well_known_names.h" />
+    <ClInclude Include="source\extensions\filters\common\ext_authz\check_request_utils.h" />
+    <ClInclude Include="source\extensions\filters\common\ext_authz\ext_authz.h" />
+    <ClInclude Include="source\extensions\filters\common\ext_authz\ext_authz_grpc_impl.h" />
+    <ClInclude Include="source\extensions\filters\common\ext_authz\ext_authz_http_impl.h" />
+    <ClInclude Include="source\extensions\filters\common\lua\lua.h" />
+    <ClInclude Include="source\extensions\filters\common\lua\wrappers.h" />
+    <ClInclude Include="source\extensions\filters\common\rbac\engine.h" />
+    <ClInclude Include="source\extensions\filters\common\rbac\engine_impl.h" />
+    <ClInclude Include="source\extensions\filters\common\rbac\matchers.h" />
+    <ClInclude Include="source\extensions\filters\http\buffer\buffer_filter.h" />
+    <ClInclude Include="source\extensions\filters\http\buffer\config.h" />
+    <ClInclude Include="source\extensions\filters\http\common\empty_http_filter_config.h" />
+    <ClInclude Include="source\extensions\filters\http\common\factory_base.h" />
+    <ClInclude Include="source\extensions\filters\http\cors\config.h" />
+    <ClInclude Include="source\extensions\filters\http\cors\cors_filter.h" />
+    <ClInclude Include="source\extensions\filters\http\dynamo\config.h" />
+    <ClInclude Include="source\extensions\filters\http\dynamo\dynamo_filter.h" />
+    <ClInclude Include="source\extensions\filters\http\dynamo\dynamo_request_parser.h" />
+    <ClInclude Include="source\extensions\filters\http\dynamo\dynamo_utility.h" />
+    <ClInclude Include="source\extensions\filters\http\ext_authz\config.h" />
+    <ClInclude Include="source\extensions\filters\http\ext_authz\ext_authz.h" />
+    <ClInclude Include="source\extensions\filters\http\fault\config.h" />
+    <ClInclude Include="source\extensions\filters\http\fault\fault_filter.h" />
+    <ClInclude Include="source\extensions\filters\http\grpc_http1_bridge\config.h" />
+    <ClInclude Include="source\extensions\filters\http\grpc_http1_bridge\http1_bridge_filter.h" />
+    <ClInclude Include="source\extensions\filters\http\grpc_json_transcoder\config.h" />
+    <ClInclude Include="source\extensions\filters\http\grpc_json_transcoder\json_transcoder_filter.h" />
+    <ClInclude Include="source\extensions\filters\http\grpc_json_transcoder\transcoder_input_stream_impl.h" />
+    <ClInclude Include="source\extensions\filters\http\grpc_web\config.h" />
+    <ClInclude Include="source\extensions\filters\http\grpc_web\grpc_web_filter.h" />
+    <ClInclude Include="source\extensions\filters\http\gzip\config.h" />
+    <ClInclude Include="source\extensions\filters\http\gzip\gzip_filter.h" />
+    <ClInclude Include="source\extensions\filters\http\header_to_metadata\config.h" />
+    <ClInclude Include="source\extensions\filters\http\header_to_metadata\header_to_metadata_filter.h" />
+    <ClInclude Include="source\extensions\filters\http\health_check\config.h" />
+    <ClInclude Include="source\extensions\filters\http\health_check\health_check.h" />
+    <ClInclude Include="source\extensions\filters\http\ip_tagging\config.h" />
+    <ClInclude Include="source\extensions\filters\http\ip_tagging\ip_tagging_filter.h" />
+    <ClInclude Include="source\extensions\filters\http\jwt_authn\authenticator.h" />
+    <ClInclude Include="source\extensions\filters\http\jwt_authn\extractor.h" />
+    <ClInclude Include="source\extensions\filters\http\jwt_authn\filter.h" />
+    <ClInclude Include="source\extensions\filters\http\jwt_authn\filter_config.h" />
+    <ClInclude Include="source\extensions\filters\http\jwt_authn\filter_factory.h" />
+    <ClInclude Include="source\extensions\filters\http\jwt_authn\jwks_cache.h" />
+    <ClInclude Include="source\extensions\filters\http\lua\config.h" />
+    <ClInclude Include="source\extensions\filters\http\lua\lua_filter.h" />
+    <ClInclude Include="source\extensions\filters\http\lua\wrappers.h" />
+    <ClInclude Include="source\extensions\filters\http\ratelimit\config.h" />
+    <ClInclude Include="source\extensions\filters\http\ratelimit\ratelimit.h" />
+    <ClInclude Include="source\extensions\filters\http\rbac\config.h" />
+    <ClInclude Include="source\extensions\filters\http\rbac\rbac_filter.h" />
+    <ClInclude Include="source\extensions\filters\http\router\config.h" />
+    <ClInclude Include="source\extensions\filters\http\squash\config.h" />
+    <ClInclude Include="source\extensions\filters\http\squash\squash_filter.h" />
+    <ClInclude Include="source\extensions\filters\http\well_known_names.h" />
+    <ClInclude Include="source\extensions\filters\listener\original_dst\original_dst.h" />
+    <ClInclude Include="source\extensions\filters\listener\proxy_protocol\proxy_protocol.h" />
+    <ClInclude Include="source\extensions\filters\listener\proxy_protocol\proxy_protocol_header.h" />
+    <ClInclude Include="source\extensions\filters\listener\tls_inspector\tls_inspector.h" />
+    <ClInclude Include="source\extensions\filters\listener\well_known_names.h" />
+    <ClInclude Include="source\extensions\filters\network\client_ssl_auth\client_ssl_auth.h" />
+    <ClInclude Include="source\extensions\filters\network\client_ssl_auth\config.h" />
+    <ClInclude Include="source\extensions\filters\network\common\factory_base.h" />
+    <ClInclude Include="source\extensions\filters\network\echo\echo.h" />
+    <ClInclude Include="source\extensions\filters\network\ext_authz\config.h" />
+    <ClInclude Include="source\extensions\filters\network\ext_authz\ext_authz.h" />
+    <ClInclude Include="source\extensions\filters\network\http_connection_manager\config.h" />
+    <ClInclude Include="source\extensions\filters\network\mongo_proxy\bson.h" />
+    <ClInclude Include="source\extensions\filters\network\mongo_proxy\bson_impl.h" />
+    <ClInclude Include="source\extensions\filters\network\mongo_proxy\codec.h" />
+    <ClInclude Include="source\extensions\filters\network\mongo_proxy\codec_impl.h" />
+    <ClInclude Include="source\extensions\filters\network\mongo_proxy\config.h" />
+    <ClInclude Include="source\extensions\filters\network\mongo_proxy\proxy.h" />
+    <ClInclude Include="source\extensions\filters\network\mongo_proxy\utility.h" />
+    <ClInclude Include="source\extensions\filters\network\ratelimit\config.h" />
+    <ClInclude Include="source\extensions\filters\network\ratelimit\ratelimit.h" />
+    <ClInclude Include="source\extensions\filters\network\redis_proxy\codec.h" />
+    <ClInclude Include="source\extensions\filters\network\redis_proxy\codec_impl.h" />
+    <ClInclude Include="source\extensions\filters\network\redis_proxy\command_splitter.h" />
+    <ClInclude Include="source\extensions\filters\network\redis_proxy\command_splitter_impl.h" />
+    <ClInclude Include="source\extensions\filters\network\redis_proxy\config.h" />
+    <ClInclude Include="source\extensions\filters\network\redis_proxy\conn_pool.h" />
+    <ClInclude Include="source\extensions\filters\network\redis_proxy\conn_pool_impl.h" />
+    <ClInclude Include="source\extensions\filters\network\redis_proxy\proxy_filter.h" />
+    <ClInclude Include="source\extensions\filters\network\redis_proxy\supported_commands.h" />
+    <ClInclude Include="source\extensions\filters\network\tcp_proxy\config.h" />
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\binary_protocol_impl.h" />
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\buffer_helper.h" />
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\compact_protocol_impl.h" />
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\config.h" />
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\decoder.h" />
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\filter.h" />
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\framed_transport_impl.h" />
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\protocol.h" />
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\protocol_impl.h" />
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\transport.h" />
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\transport_impl.h" />
+    <ClInclude Include="source\extensions\filters\network\thrift_proxy\unframed_transport_impl.h" />
+    <ClInclude Include="source\extensions\filters\network\well_known_names.h" />
+    <ClInclude Include="source\extensions\grpc_credentials\example\config.h" />
+    <ClInclude Include="source\extensions\grpc_credentials\file_based_metadata\config.h" />
+    <ClInclude Include="source\extensions\grpc_credentials\well_known_names.h" />
+    <ClInclude Include="source\extensions\health_checkers\redis\config.h" />
+    <ClInclude Include="source\extensions\health_checkers\redis\redis.h" />
+    <ClInclude Include="source\extensions\health_checkers\redis\utility.h" />
+    <ClInclude Include="source\extensions\health_checkers\well_known_names.h" />
+    <ClInclude Include="source\extensions\stat_sinks\common\statsd\statsd.h" />
+    <ClInclude Include="source\extensions\stat_sinks\dog_statsd\config.h" />
+    <ClInclude Include="source\extensions\stat_sinks\hystrix\config.h" />
+    <ClInclude Include="source\extensions\stat_sinks\hystrix\hystrix.h" />
+    <ClInclude Include="source\extensions\stat_sinks\metrics_service\config.h" />
+    <ClInclude Include="source\extensions\stat_sinks\metrics_service\grpc_metrics_service_impl.h" />
+    <ClInclude Include="source\extensions\stat_sinks\statsd\config.h" />
+    <ClInclude Include="source\extensions\stat_sinks\well_known_names.h" />
+    <ClInclude Include="source\extensions\tracers\common\ot\opentracing_driver_impl.h" />
+    <ClInclude Include="source\extensions\tracers\dynamic_ot\config.h" />
+    <ClInclude Include="source\extensions\tracers\dynamic_ot\dynamic_opentracing_driver_impl.h" />
+    <ClInclude Include="source\extensions\tracers\lightstep\config.h" />
+    <ClInclude Include="source\extensions\tracers\lightstep\lightstep_tracer_impl.h" />
+    <ClInclude Include="source\extensions\tracers\well_known_names.h" />
+    <ClInclude Include="source\extensions\tracers\zipkin\config.h" />
+    <ClInclude Include="source\extensions\tracers\zipkin\span_buffer.h" />
+    <ClInclude Include="source\extensions\tracers\zipkin\span_context.h" />
+    <ClInclude Include="source\extensions\tracers\zipkin\tracer.h" />
+    <ClInclude Include="source\extensions\tracers\zipkin\tracer_interface.h" />
+    <ClInclude Include="source\extensions\tracers\zipkin\util.h" />
+    <ClInclude Include="source\extensions\tracers\zipkin\zipkin_core_constants.h" />
+    <ClInclude Include="source\extensions\tracers\zipkin\zipkin_core_types.h" />
+    <ClInclude Include="source\extensions\tracers\zipkin\zipkin_json_field_names.h" />
+    <ClInclude Include="source\extensions\tracers\zipkin\zipkin_tracer_impl.h" />
+    <ClInclude Include="source\extensions\transport_sockets\alts\grpc_tsi.h" />
+    <ClInclude Include="source\extensions\transport_sockets\alts\tsi_handshaker.h" />
+    <ClInclude Include="source\extensions\transport_sockets\capture\capture.h" />
+    <ClInclude Include="source\extensions\transport_sockets\capture\config.h" />
+    <ClInclude Include="source\extensions\transport_sockets\raw_buffer\config.h" />
+    <ClInclude Include="source\extensions\transport_sockets\ssl\config.h" />
+    <ClInclude Include="source\extensions\transport_sockets\well_known_names.h" />
+    <ClInclude Include="source\server\backtrace.h" />
+    <ClInclude Include="source\server\configuration_impl.h" />
+    <ClInclude Include="source\server\config_validation\admin.h" />
+    <ClInclude Include="source\server\config_validation\api.h" />
+    <ClInclude Include="source\server\config_validation\async_client.h" />
+    <ClInclude Include="source\server\config_validation\cluster_manager.h" />
+    <ClInclude Include="source\server\config_validation\connection.h" />
+    <ClInclude Include="source\server\config_validation\dispatcher.h" />
+    <ClInclude Include="source\server\config_validation\dns.h" />
+    <ClInclude Include="source\server\config_validation\server.h" />
+    <ClInclude Include="source\server\connection_handler_impl.h" />
+    <ClInclude Include="source\server\drain_manager_impl.h" />
+    <ClInclude Include="source\server\guarddog_impl.h" />
+    <ClInclude Include="source\server\hot_restart_impl.h" />
+    <ClInclude Include="source\server\hot_restart_nop_impl.h" />
+    <ClInclude Include="source\server\http\admin.h" />
+    <ClInclude Include="source\server\http\config_tracker_impl.h" />
+    <ClInclude Include="source\server\init_manager_impl.h" />
+    <ClInclude Include="source\server\lds_api.h" />
+    <ClInclude Include="source\server\lds_subscription.h" />
+    <ClInclude Include="source\server\listener_manager_impl.h" />
+    <ClInclude Include="source\server\options_impl.h" />
+    <ClInclude Include="source\server\proto_descriptors.h" />
+    <ClInclude Include="source\server\server.h" />
+    <ClInclude Include="source\server\test_hooks.h" />
+    <ClInclude Include="source\server\watchdog_impl.h" />
+    <ClInclude Include="source\server\worker_impl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\common\access_log\access_log_formatter.cc" />
+    <ClCompile Include="source\common\access_log\access_log_impl.cc" />
+    <ClCompile Include="source\common\access_log\access_log_manager_impl.cc" />
+    <ClCompile Include="source\common\api\api_impl.cc" />
+    <ClCompile Include="source\common\api\os_sys_calls_impl.cc" />
+    <ClCompile Include="source\common\buffer\buffer_impl.cc" />
+    <ClCompile Include="source\common\buffer\watermark_buffer.cc" />
+    <ClCompile Include="source\common\buffer\zero_copy_input_stream_impl.cc" />
+    <ClCompile Include="source\common\common\backoff_strategy.cc" />
+    <ClCompile Include="source\common\common\base64.cc" />
+    <ClCompile Include="source\common\common\hex.cc" />
+    <ClCompile Include="source\common\common\logger.cc" />
+    <ClCompile Include="source\common\common\logger_delegates.cc" />
+    <ClCompile Include="source\common\common\matchers.cc" />
+    <ClCompile Include="source\common\common\perf_annotation.cc" />
+    <ClCompile Include="source\common\common\thread.cc" />
+    <ClCompile Include="source\common\common\token_bucket_impl.cc" />
+    <ClCompile Include="source\common\common\to_lower_table.cc" />
+    <ClCompile Include="source\common\common\utility.cc" />
+    <ClCompile Include="source\common\common\version.cc" />
+    <ClCompile Include="source\common\common\version_linkstamp.cc" />
+    <ClCompile Include="source\common\compressor\zlib_compressor_impl.cc" />
+    <ClCompile Include="source\common\config\address_json.cc" />
+    <ClCompile Include="source\common\config\base_json.cc" />
+    <ClCompile Include="source\common\config\bootstrap_json.cc" />
+    <ClCompile Include="source\common\config\cds_json.cc" />
+    <ClCompile Include="source\common\config\datasource.cc" />
+    <ClCompile Include="source\common\config\filter_json.cc" />
+    <ClCompile Include="source\common\config\grpc_mux_impl.cc" />
+    <ClCompile Include="source\common\config\lds_json.cc" />
+    <ClCompile Include="source\common\config\metadata.cc" />
+    <ClCompile Include="source\common\config\protocol_json.cc" />
+    <ClCompile Include="source\common\config\rds_json.cc" />
+    <ClCompile Include="source\common\config\tls_context_json.cc" />
+    <ClCompile Include="source\common\config\utility.cc" />
+    <ClCompile Include="source\common\config\well_known_names.cc" />
+    <ClCompile Include="source\common\decompressor\zlib_decompressor_impl.cc" />
+    <ClCompile Include="source\common\event\dispatched_thread.cc" />
+    <ClCompile Include="source\common\event\dispatcher_impl.cc" />
+    <ClCompile Include="source\common\event\event_impl_base.cc" />
+    <ClCompile Include="source\common\event\file_event_impl.cc" />
+    <ClCompile Include="source\common\event\libevent.cc" />
+    <ClCompile Include="source\common\event\signal_impl.cc" />
+    <ClCompile Include="source\common\event\timer_impl.cc" />
+    <ClCompile Include="source\common\filesystem\filesystem_impl.cc" />
+    <ClCompile Include="source\common\filesystem\inotify\watcher_impl.cc" />
+    <ClCompile Include="source\common\filesystem\kqueue\watcher_impl.cc" />
+    <ClCompile Include="source\common\grpc\async_client_impl.cc" />
+    <ClCompile Include="source\common\grpc\async_client_manager_impl.cc" />
+    <ClCompile Include="source\common\grpc\codec.cc" />
+    <ClCompile Include="source\common\grpc\common.cc" />
+    <ClCompile Include="source\common\grpc\google_async_client_impl.cc" />
+    <ClCompile Include="source\common\grpc\google_grpc_creds_impl.cc" />
+    <ClCompile Include="source\common\grpc\status.cc" />
+    <ClCompile Include="source\common\html\utility.cc" />
+    <ClCompile Include="source\common\http\async_client_impl.cc" />
+    <ClCompile Include="source\common\http\codec_client.cc" />
+    <ClCompile Include="source\common\http\codes.cc" />
+    <ClCompile Include="source\common\http\conn_manager_impl.cc" />
+    <ClCompile Include="source\common\http\conn_manager_utility.cc" />
+    <ClCompile Include="source\common\http\date_provider_impl.cc" />
+    <ClCompile Include="source\common\http\filter_utility.cc" />
+    <ClCompile Include="source\common\http\header_map_impl.cc" />
+    <ClCompile Include="source\common\http\header_utility.cc" />
+    <ClCompile Include="source\common\http\http1\codec_impl.cc" />
+    <ClCompile Include="source\common\http\http1\conn_pool.cc" />
+    <ClCompile Include="source\common\http\http2\codec_impl.cc" />
+    <ClCompile Include="source\common\http\http2\conn_pool.cc" />
+    <ClCompile Include="source\common\http\message_impl.cc" />
+    <ClCompile Include="source\common\http\rest_api_fetcher.cc" />
+    <ClCompile Include="source\common\http\user_agent.cc" />
+    <ClCompile Include="source\common\http\utility.cc" />
+    <ClCompile Include="source\common\http\websocket\ws_handler_impl.cc" />
+    <ClCompile Include="source\common\json\config_schemas.cc" />
+    <ClCompile Include="source\common\json\json_loader.cc" />
+    <ClCompile Include="source\common\memory\stats.cc" />
+    <ClCompile Include="source\common\network\address_impl.cc" />
+    <ClCompile Include="source\common\network\addr_family_aware_socket_option_impl.cc" />
+    <ClCompile Include="source\common\network\cidr_range.cc" />
+    <ClCompile Include="source\common\network\connection_impl.cc" />
+    <ClCompile Include="source\common\network\dns_impl.cc" />
+    <ClCompile Include="source\common\network\filter_manager_impl.cc" />
+    <ClCompile Include="source\common\network\listener_impl.cc" />
+    <ClCompile Include="source\common\network\listen_socket_impl.cc" />
+    <ClCompile Include="source\common\network\raw_buffer_socket.cc" />
+    <ClCompile Include="source\common\network\resolver_impl.cc" />
+    <ClCompile Include="source\common\network\socket_option_factory.cc" />
+    <ClCompile Include="source\common\network\socket_option_impl.cc" />
+    <ClCompile Include="source\common\network\utility.cc" />
+    <ClCompile Include="source\common\profiler\profiler.cc" />
+    <ClCompile Include="source\common\protobuf\utility.cc" />
+    <ClCompile Include="source\common\ratelimit\ratelimit_impl.cc" />
+    <ClCompile Include="source\common\request_info\utility.cc" />
+    <ClCompile Include="source\common\router\config_impl.cc" />
+    <ClCompile Include="source\common\router\config_utility.cc" />
+    <ClCompile Include="source\common\router\header_formatter.cc" />
+    <ClCompile Include="source\common\router\header_parser.cc" />
+    <ClCompile Include="source\common\router\rds_impl.cc" />
+    <ClCompile Include="source\common\router\rds_subscription.cc" />
+    <ClCompile Include="source\common\router\retry_state_impl.cc" />
+    <ClCompile Include="source\common\router\router.cc" />
+    <ClCompile Include="source\common\router\router_ratelimit.cc" />
+    <ClCompile Include="source\common\router\shadow_writer_impl.cc" />
+    <ClCompile Include="source\common\runtime\runtime_impl.cc" />
+    <ClCompile Include="source\common\runtime\uuid_util.cc" />
+    <ClCompile Include="source\common\secret\secret_manager_impl.cc" />
+    <ClCompile Include="source\common\singleton\manager_impl.cc" />
+    <ClCompile Include="source\common\ssl\context_config_impl.cc" />
+    <ClCompile Include="source\common\ssl\context_impl.cc" />
+    <ClCompile Include="source\common\ssl\context_manager_impl.cc" />
+    <ClCompile Include="source\common\ssl\ssl_socket.cc" />
+    <ClCompile Include="source\common\ssl\tls_certificate_config_impl.cc" />
+    <ClCompile Include="source\common\ssl\utility.cc" />
+    <ClCompile Include="source\common\stats\stats_impl.cc" />
+    <ClCompile Include="source\common\stats\thread_local_store.cc" />
+    <ClCompile Include="source\common\tcp\conn_pool.cc" />
+    <ClCompile Include="source\common\tcp_proxy\tcp_proxy.cc" />
+    <ClCompile Include="source\common\thread_local\thread_local_impl.cc" />
+    <ClCompile Include="source\common\tracing\http_tracer_impl.cc" />
+    <ClCompile Include="source\common\upstream\cds_api_impl.cc" />
+    <ClCompile Include="source\common\upstream\cds_subscription.cc" />
+    <ClCompile Include="source\common\upstream\cluster_manager_impl.cc" />
+    <ClCompile Include="source\common\upstream\eds.cc" />
+    <ClCompile Include="source\common\upstream\health_checker_base_impl.cc" />
+    <ClCompile Include="source\common\upstream\health_checker_impl.cc" />
+    <ClCompile Include="source\common\upstream\health_discovery_service.cc" />
+    <ClCompile Include="source\common\upstream\host_utility.cc" />
+    <ClCompile Include="source\common\upstream\load_balancer_impl.cc" />
+    <ClCompile Include="source\common\upstream\load_stats_reporter.cc" />
+    <ClCompile Include="source\common\upstream\logical_dns_cluster.cc" />
+    <ClCompile Include="source\common\upstream\maglev_lb.cc" />
+    <ClCompile Include="source\common\upstream\original_dst_cluster.cc" />
+    <ClCompile Include="source\common\upstream\outlier_detection_impl.cc" />
+    <ClCompile Include="source\common\upstream\ring_hash_lb.cc" />
+    <ClCompile Include="source\common\upstream\sds_subscription.cc" />
+    <ClCompile Include="source\common\upstream\subset_lb.cc" />
+    <ClCompile Include="source\common\upstream\thread_aware_lb_impl.cc" />
+    <ClCompile Include="source\common\upstream\upstream_impl.cc" />
+    <ClCompile Include="source\exe\main.cc" />
+    <ClCompile Include="source\exe\main_common.cc" />
+    <ClCompile Include="source\exe\signal_action.cc" />
+    <ClCompile Include="source\exe\terminate_handler.cc" />
+    <ClCompile Include="source\extensions\access_loggers\file\config.cc" />
+    <ClCompile Include="source\extensions\access_loggers\file\file_access_log_impl.cc" />
+    <ClCompile Include="source\extensions\access_loggers\http_grpc\config.cc" />
+    <ClCompile Include="source\extensions\access_loggers\http_grpc\grpc_access_log_impl.cc" />
+    <ClCompile Include="source\extensions\filters\common\ext_authz\check_request_utils.cc" />
+    <ClCompile Include="source\extensions\filters\common\ext_authz\ext_authz_grpc_impl.cc" />
+    <ClCompile Include="source\extensions\filters\common\ext_authz\ext_authz_http_impl.cc" />
+    <ClCompile Include="source\extensions\filters\common\lua\lua.cc" />
+    <ClCompile Include="source\extensions\filters\common\lua\wrappers.cc" />
+    <ClCompile Include="source\extensions\filters\common\rbac\engine_impl.cc" />
+    <ClCompile Include="source\extensions\filters\common\rbac\matchers.cc" />
+    <ClCompile Include="source\extensions\filters\http\buffer\buffer_filter.cc" />
+    <ClCompile Include="source\extensions\filters\http\buffer\config.cc" />
+    <ClCompile Include="source\extensions\filters\http\cors\config.cc" />
+    <ClCompile Include="source\extensions\filters\http\cors\cors_filter.cc" />
+    <ClCompile Include="source\extensions\filters\http\dynamo\config.cc" />
+    <ClCompile Include="source\extensions\filters\http\dynamo\dynamo_filter.cc" />
+    <ClCompile Include="source\extensions\filters\http\dynamo\dynamo_request_parser.cc" />
+    <ClCompile Include="source\extensions\filters\http\dynamo\dynamo_utility.cc" />
+    <ClCompile Include="source\extensions\filters\http\ext_authz\config.cc" />
+    <ClCompile Include="source\extensions\filters\http\ext_authz\ext_authz.cc" />
+    <ClCompile Include="source\extensions\filters\http\fault\config.cc" />
+    <ClCompile Include="source\extensions\filters\http\fault\fault_filter.cc" />
+    <ClCompile Include="source\extensions\filters\http\grpc_http1_bridge\config.cc" />
+    <ClCompile Include="source\extensions\filters\http\grpc_http1_bridge\http1_bridge_filter.cc" />
+    <ClCompile Include="source\extensions\filters\http\grpc_json_transcoder\config.cc" />
+    <ClCompile Include="source\extensions\filters\http\grpc_json_transcoder\json_transcoder_filter.cc" />
+    <ClCompile Include="source\extensions\filters\http\grpc_json_transcoder\transcoder_input_stream_impl.cc" />
+    <ClCompile Include="source\extensions\filters\http\grpc_web\config.cc" />
+    <ClCompile Include="source\extensions\filters\http\grpc_web\grpc_web_filter.cc" />
+    <ClCompile Include="source\extensions\filters\http\gzip\config.cc" />
+    <ClCompile Include="source\extensions\filters\http\gzip\gzip_filter.cc" />
+    <ClCompile Include="source\extensions\filters\http\header_to_metadata\config.cc" />
+    <ClCompile Include="source\extensions\filters\http\header_to_metadata\header_to_metadata_filter.cc" />
+    <ClCompile Include="source\extensions\filters\http\health_check\config.cc" />
+    <ClCompile Include="source\extensions\filters\http\health_check\health_check.cc" />
+    <ClCompile Include="source\extensions\filters\http\ip_tagging\config.cc" />
+    <ClCompile Include="source\extensions\filters\http\ip_tagging\ip_tagging_filter.cc" />
+    <ClCompile Include="source\extensions\filters\http\jwt_authn\authenticator.cc" />
+    <ClCompile Include="source\extensions\filters\http\jwt_authn\extractor.cc" />
+    <ClCompile Include="source\extensions\filters\http\jwt_authn\filter.cc" />
+    <ClCompile Include="source\extensions\filters\http\jwt_authn\filter_factory.cc" />
+    <ClCompile Include="source\extensions\filters\http\jwt_authn\jwks_cache.cc" />
+    <ClCompile Include="source\extensions\filters\http\lua\config.cc" />
+    <ClCompile Include="source\extensions\filters\http\lua\lua_filter.cc" />
+    <ClCompile Include="source\extensions\filters\http\lua\wrappers.cc" />
+    <ClCompile Include="source\extensions\filters\http\ratelimit\config.cc" />
+    <ClCompile Include="source\extensions\filters\http\ratelimit\ratelimit.cc" />
+    <ClCompile Include="source\extensions\filters\http\rbac\config.cc" />
+    <ClCompile Include="source\extensions\filters\http\rbac\rbac_filter.cc" />
+    <ClCompile Include="source\extensions\filters\http\router\config.cc" />
+    <ClCompile Include="source\extensions\filters\http\squash\config.cc" />
+    <ClCompile Include="source\extensions\filters\http\squash\squash_filter.cc" />
+    <ClCompile Include="source\extensions\filters\listener\original_dst\config.cc" />
+    <ClCompile Include="source\extensions\filters\listener\original_dst\original_dst.cc" />
+    <ClCompile Include="source\extensions\filters\listener\proxy_protocol\config.cc" />
+    <ClCompile Include="source\extensions\filters\listener\proxy_protocol\proxy_protocol.cc" />
+    <ClCompile Include="source\extensions\filters\listener\tls_inspector\config.cc" />
+    <ClCompile Include="source\extensions\filters\listener\tls_inspector\tls_inspector.cc" />
+    <ClCompile Include="source\extensions\filters\network\client_ssl_auth\client_ssl_auth.cc" />
+    <ClCompile Include="source\extensions\filters\network\client_ssl_auth\config.cc" />
+    <ClCompile Include="source\extensions\filters\network\echo\config.cc" />
+    <ClCompile Include="source\extensions\filters\network\echo\echo.cc" />
+    <ClCompile Include="source\extensions\filters\network\ext_authz\config.cc" />
+    <ClCompile Include="source\extensions\filters\network\ext_authz\ext_authz.cc" />
+    <ClCompile Include="source\extensions\filters\network\http_connection_manager\config.cc" />
+    <ClCompile Include="source\extensions\filters\network\mongo_proxy\bson_impl.cc" />
+    <ClCompile Include="source\extensions\filters\network\mongo_proxy\codec_impl.cc" />
+    <ClCompile Include="source\extensions\filters\network\mongo_proxy\config.cc" />
+    <ClCompile Include="source\extensions\filters\network\mongo_proxy\proxy.cc" />
+    <ClCompile Include="source\extensions\filters\network\mongo_proxy\utility.cc" />
+    <ClCompile Include="source\extensions\filters\network\ratelimit\config.cc" />
+    <ClCompile Include="source\extensions\filters\network\ratelimit\ratelimit.cc" />
+    <ClCompile Include="source\extensions\filters\network\redis_proxy\codec_impl.cc" />
+    <ClCompile Include="source\extensions\filters\network\redis_proxy\command_splitter_impl.cc" />
+    <ClCompile Include="source\extensions\filters\network\redis_proxy\config.cc" />
+    <ClCompile Include="source\extensions\filters\network\redis_proxy\conn_pool_impl.cc" />
+    <ClCompile Include="source\extensions\filters\network\redis_proxy\proxy_filter.cc" />
+    <ClCompile Include="source\extensions\filters\network\tcp_proxy\config.cc" />
+    <ClCompile Include="source\extensions\filters\network\thrift_proxy\binary_protocol_impl.cc" />
+    <ClCompile Include="source\extensions\filters\network\thrift_proxy\buffer_helper.cc" />
+    <ClCompile Include="source\extensions\filters\network\thrift_proxy\compact_protocol_impl.cc" />
+    <ClCompile Include="source\extensions\filters\network\thrift_proxy\config.cc" />
+    <ClCompile Include="source\extensions\filters\network\thrift_proxy\decoder.cc" />
+    <ClCompile Include="source\extensions\filters\network\thrift_proxy\filter.cc" />
+    <ClCompile Include="source\extensions\filters\network\thrift_proxy\framed_transport_impl.cc" />
+    <ClCompile Include="source\extensions\filters\network\thrift_proxy\protocol_impl.cc" />
+    <ClCompile Include="source\extensions\filters\network\thrift_proxy\transport_impl.cc" />
+    <ClCompile Include="source\extensions\grpc_credentials\example\config.cc" />
+    <ClCompile Include="source\extensions\grpc_credentials\file_based_metadata\config.cc" />
+    <ClCompile Include="source\extensions\health_checkers\redis\config.cc" />
+    <ClCompile Include="source\extensions\health_checkers\redis\redis.cc" />
+    <ClCompile Include="source\extensions\stat_sinks\common\statsd\statsd.cc" />
+    <ClCompile Include="source\extensions\stat_sinks\dog_statsd\config.cc" />
+    <ClCompile Include="source\extensions\stat_sinks\hystrix\config.cc" />
+    <ClCompile Include="source\extensions\stat_sinks\hystrix\hystrix.cc" />
+    <ClCompile Include="source\extensions\stat_sinks\metrics_service\config.cc" />
+    <ClCompile Include="source\extensions\stat_sinks\metrics_service\grpc_metrics_service_impl.cc" />
+    <ClCompile Include="source\extensions\stat_sinks\statsd\config.cc" />
+    <ClCompile Include="source\extensions\tracers\common\ot\opentracing_driver_impl.cc" />
+    <ClCompile Include="source\extensions\tracers\dynamic_ot\config.cc" />
+    <ClCompile Include="source\extensions\tracers\dynamic_ot\dynamic_opentracing_driver_impl.cc" />
+    <ClCompile Include="source\extensions\tracers\lightstep\config.cc" />
+    <ClCompile Include="source\extensions\tracers\lightstep\lightstep_tracer_impl.cc" />
+    <ClCompile Include="source\extensions\tracers\zipkin\config.cc" />
+    <ClCompile Include="source\extensions\tracers\zipkin\span_buffer.cc" />
+    <ClCompile Include="source\extensions\tracers\zipkin\span_context.cc" />
+    <ClCompile Include="source\extensions\tracers\zipkin\tracer.cc" />
+    <ClCompile Include="source\extensions\tracers\zipkin\util.cc" />
+    <ClCompile Include="source\extensions\tracers\zipkin\zipkin_core_types.cc" />
+    <ClCompile Include="source\extensions\tracers\zipkin\zipkin_tracer_impl.cc" />
+    <ClCompile Include="source\extensions\transport_sockets\alts\tsi_handshaker.cc" />
+    <ClCompile Include="source\extensions\transport_sockets\capture\capture.cc" />
+    <ClCompile Include="source\extensions\transport_sockets\capture\config.cc" />
+    <ClCompile Include="source\extensions\transport_sockets\raw_buffer\config.cc" />
+    <ClCompile Include="source\extensions\transport_sockets\ssl\config.cc" />
+    <ClCompile Include="source\server\configuration_impl.cc" />
+    <ClCompile Include="source\server\config_validation\admin.cc" />
+    <ClCompile Include="source\server\config_validation\api.cc" />
+    <ClCompile Include="source\server\config_validation\async_client.cc" />
+    <ClCompile Include="source\server\config_validation\cluster_manager.cc" />
+    <ClCompile Include="source\server\config_validation\dispatcher.cc" />
+    <ClCompile Include="source\server\config_validation\dns.cc" />
+    <ClCompile Include="source\server\config_validation\server.cc" />
+    <ClCompile Include="source\server\connection_handler_impl.cc" />
+    <ClCompile Include="source\server\drain_manager_impl.cc" />
+    <ClCompile Include="source\server\guarddog_impl.cc" />
+    <ClCompile Include="source\server\hot_restart_impl.cc" />
+    <ClCompile Include="source\server\http\admin.cc" />
+    <ClCompile Include="source\server\http\config_tracker_impl.cc" />
+    <ClCompile Include="source\server\init_manager_impl.cc" />
+    <ClCompile Include="source\server\lds_api.cc" />
+    <ClCompile Include="source\server\lds_subscription.cc" />
+    <ClCompile Include="source\server\listener_manager_impl.cc" />
+    <ClCompile Include="source\server\options_impl.cc" />
+    <ClCompile Include="source\server\proto_descriptors.cc" />
+    <ClCompile Include="source\server\server.cc" />
+    <ClCompile Include="source\server\watchdog_impl.cc" />
+    <ClCompile Include="source\server\worker_impl.cc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
