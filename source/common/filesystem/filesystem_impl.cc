@@ -62,7 +62,7 @@ std::string fileReadToEnd(const std::string& path) {
 
   return file_string.str();
 }
-
+//相对路径转换成绝对路径
 std::string canonicalPath(const std::string& path) {
   // TODO(htuch): When we are using C++17, switch to std::filesystem::canonical.
   char* resolved_path = ::realpath(path.c_str(), nullptr);
