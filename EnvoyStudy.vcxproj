@@ -69,7 +69,10 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)include;$(SolutionDir)include\source\extensions;$(SolutionDir)include\source\;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)include;$(SolutionDir)include\source\extensions;$(SolutionDir)include\source\;$(SolutionDir)include\ares;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)include;$(SolutionDir)include\source\extensions;$(SolutionDir)include\source\;$(SolutionDir)include\ares;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -235,6 +238,31 @@
     <ClInclude Include="include\absl\types\span.h" />
     <ClInclude Include="include\absl\types\variant.h" />
     <ClInclude Include="include\absl\utility\utility.h" />
+    <ClInclude Include="include\ares\ares.h" />
+    <ClInclude Include="include\ares\ares_android.h" />
+    <ClInclude Include="include\ares\ares_data.h" />
+    <ClInclude Include="include\ares\ares_dns.h" />
+    <ClInclude Include="include\ares\ares_getenv.h" />
+    <ClInclude Include="include\ares\ares_getopt.h" />
+    <ClInclude Include="include\ares\ares_inet_net_pton.h" />
+    <ClInclude Include="include\ares\ares_iphlpapi.h" />
+    <ClInclude Include="include\ares\ares_ipv6.h" />
+    <ClInclude Include="include\ares\ares_library_init.h" />
+    <ClInclude Include="include\ares\ares_llist.h" />
+    <ClInclude Include="include\ares\ares_nowarn.h" />
+    <ClInclude Include="include\ares\ares_platform.h" />
+    <ClInclude Include="include\ares\ares_private.h" />
+    <ClInclude Include="include\ares\ares_rules.h" />
+    <ClInclude Include="include\ares\ares_setup.h" />
+    <ClInclude Include="include\ares\ares_strcasecmp.h" />
+    <ClInclude Include="include\ares\ares_strdup.h" />
+    <ClInclude Include="include\ares\ares_version.h" />
+    <ClInclude Include="include\ares\ares_writev.h" />
+    <ClInclude Include="include\ares\bitncmp.h" />
+    <ClInclude Include="include\ares\config-dos.h" />
+    <ClInclude Include="include\ares\config-win32.h" />
+    <ClInclude Include="include\ares\nameser.h" />
+    <ClInclude Include="include\ares\setup_once.h" />
     <ClInclude Include="include\envoy\access_log\access_log.h" />
     <ClInclude Include="include\envoy\api\api.h" />
     <ClInclude Include="include\envoy\api\os_sys_calls.h" />
@@ -869,6 +897,59 @@
     <ClCompile Include="include\absl\types\variant_exception_safety_test.cc" />
     <ClCompile Include="include\absl\types\variant_test.cc" />
     <ClCompile Include="include\absl\utility\utility_test.cc" />
+    <ClCompile Include="include\ares\acountry.c" />
+    <ClCompile Include="include\ares\adig.c" />
+    <ClCompile Include="include\ares\ahost.c" />
+    <ClCompile Include="include\ares\ares_android.c" />
+    <ClCompile Include="include\ares\ares_cancel.c" />
+    <ClCompile Include="include\ares\ares_create_query.c" />
+    <ClCompile Include="include\ares\ares_data.c" />
+    <ClCompile Include="include\ares\ares_destroy.c" />
+    <ClCompile Include="include\ares\ares_expand_name.c" />
+    <ClCompile Include="include\ares\ares_expand_string.c" />
+    <ClCompile Include="include\ares\ares_fds.c" />
+    <ClCompile Include="include\ares\ares_free_hostent.c" />
+    <ClCompile Include="include\ares\ares_free_string.c" />
+    <ClCompile Include="include\ares\ares_getenv.c" />
+    <ClCompile Include="include\ares\ares_gethostbyaddr.c" />
+    <ClCompile Include="include\ares\ares_gethostbyname.c" />
+    <ClCompile Include="include\ares\ares_getnameinfo.c" />
+    <ClCompile Include="include\ares\ares_getopt.c" />
+    <ClCompile Include="include\ares\ares_getsock.c" />
+    <ClCompile Include="include\ares\ares_init.c" />
+    <ClCompile Include="include\ares\ares_library_init.c" />
+    <ClCompile Include="include\ares\ares_llist.c" />
+    <ClCompile Include="include\ares\ares_mkquery.c" />
+    <ClCompile Include="include\ares\ares_nowarn.c" />
+    <ClCompile Include="include\ares\ares_options.c" />
+    <ClCompile Include="include\ares\ares_parse_aaaa_reply.c" />
+    <ClCompile Include="include\ares\ares_parse_a_reply.c" />
+    <ClCompile Include="include\ares\ares_parse_mx_reply.c" />
+    <ClCompile Include="include\ares\ares_parse_naptr_reply.c" />
+    <ClCompile Include="include\ares\ares_parse_ns_reply.c" />
+    <ClCompile Include="include\ares\ares_parse_ptr_reply.c" />
+    <ClCompile Include="include\ares\ares_parse_soa_reply.c" />
+    <ClCompile Include="include\ares\ares_parse_srv_reply.c" />
+    <ClCompile Include="include\ares\ares_parse_txt_reply.c" />
+    <ClCompile Include="include\ares\ares_platform.c" />
+    <ClCompile Include="include\ares\ares_process.c" />
+    <ClCompile Include="include\ares\ares_query.c" />
+    <ClCompile Include="include\ares\ares_search.c" />
+    <ClCompile Include="include\ares\ares_send.c" />
+    <ClCompile Include="include\ares\ares_strcasecmp.c" />
+    <ClCompile Include="include\ares\ares_strdup.c" />
+    <ClCompile Include="include\ares\ares_strerror.c" />
+    <ClCompile Include="include\ares\ares_timeout.c" />
+    <ClCompile Include="include\ares\ares_version.c" />
+    <ClCompile Include="include\ares\ares_writev.c" />
+    <ClCompile Include="include\ares\ares__close_sockets.c" />
+    <ClCompile Include="include\ares\ares__get_hostent.c" />
+    <ClCompile Include="include\ares\ares__read_line.c" />
+    <ClCompile Include="include\ares\ares__timeval.c" />
+    <ClCompile Include="include\ares\bitncmp.c" />
+    <ClCompile Include="include\ares\inet_net_pton.c" />
+    <ClCompile Include="include\ares\inet_ntop.c" />
+    <ClCompile Include="include\ares\windows_port.c" />
     <ClCompile Include="source\common\access_log\access_log_formatter.cc" />
     <ClCompile Include="source\common\access_log\access_log_impl.cc" />
     <ClCompile Include="source\common\access_log\access_log_manager_impl.cc" />
